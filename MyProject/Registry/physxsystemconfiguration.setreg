@@ -1,0 +1,105 @@
+{
+    "Amazon": {
+        "Gems": {
+            "PhysX": {
+                "PhysXSystemConfiguration": {
+                    "CollisionConfig": {
+                        "Layers": {
+                            "LayerNames": [
+                                "Default",
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {},
+                                {}
+                            ]
+                        },
+                        "Groups": {
+                            "GroupPresets": [
+                                {
+                                    "Name": "All",
+                                    "ReadOnly": true
+                                },
+                                {
+                                    "Id": {
+                                        "GroupId": "{EFE8E489-7F54-4CC3-82E5-B309EA4D76A5}"
+                                    },
+                                    "Name": "None",
+                                    "Group": {
+                                        "Mask": 0
+                                    },
+                                    "ReadOnly": true
+                                }
+                            ]
+                        }
+                    },
+                    "MaterialLibrary": {
+                        "assetId": {
+                            "guid": "{7CDF49C3-91A2-5C4E-B642-6D1AEC80E70E}"
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "assets/physics/surfacetypemateriallibrary.physmaterial"
+                    }
+                }
+            }
+        }
+    }
+}

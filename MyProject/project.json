@@ -1,0 +1,16 @@
+{
+    "project_name": "MyProject",
+    "origin": "The primary repo for MyProject goes here: i.e. http://www.mydomain.com",
+    "license": "What license MyProject uses goes here: i.e. https://opensource.org/licenses/MIT",
+    "display_name": "MyProject",
+    "summary": "A short description of MyProject.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "MyProject"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de-sdk",
+    "external_subdirectories": []
+}
