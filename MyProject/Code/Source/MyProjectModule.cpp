@@ -2,6 +2,7 @@
 #include <AzCore/Memory/SystemAllocator.h>
 #include <AzCore/Module/Module.h>
 
+#include "MyComponent.h"
 #include "MyProjectSystemComponent.h"
 
 namespace MyProject
@@ -19,6 +20,7 @@ namespace MyProject
             // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
             m_descriptors.insert(m_descriptors.end(), {
                 MyProjectSystemComponent::CreateDescriptor(),
+                MyComponent::CreateDescriptor(),
             });
         }
 
