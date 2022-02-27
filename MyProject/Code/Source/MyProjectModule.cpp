@@ -3,6 +3,7 @@
 #include <AzCore/Module/Module.h>
 
 #include "MyComponent.h"
+#include "MyFindComponent.h"
 #include "MyProjectSystemComponent.h"
 
 namespace MyProject
@@ -21,6 +22,7 @@ namespace MyProject
             m_descriptors.insert(m_descriptors.end(), {
                 MyProjectSystemComponent::CreateDescriptor(),
                 MyComponent::CreateDescriptor(),
+                MyFindComponent::CreateDescriptor(),
             });
         }
 

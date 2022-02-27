@@ -379,7 +379,18 @@
                 },
                 "Component_[6495255223970673916]": {
                     "$type": "AZ::Render::EditorMeshComponent",
-                    "Id": 6495255223970673916
+                    "Id": 6495255223970673916,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{682C0F6C-7C6D-5C08-B641-6D0C49AF0B7B}",
+                                    "subId": 279578499
+                                },
+                                "assetHint": "materialeditor/viewportmodels/shaderball.azmodel"
+                            }
+                        }
+                    }
                 },
                 "Component_[8056625192494070973]": {
                     "$type": "SelectionComponent",
@@ -891,6 +902,13 @@
                             -6.914525032043457,
                             0.8342297673225403
                         ]
+                    }
+                },
+                "Component_[12310133513486768326]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12310133513486768326,
+                    "m_template": {
+                        "$type": "MyFindComponent"
                     }
                 },
                 "Component_[1639755145002038298]": {

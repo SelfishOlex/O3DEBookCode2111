@@ -5,6 +5,8 @@ set(FILES
     Source/MyProjectSystemComponent.h
     enabled_gems.cmake
 
-    Source/MyComponent.cpp # new
-    Source/MyComponent.h   # new
+    Source/MyComponent.cpp
+    Source/MyComponent.h
+    Source/MyFindComponent.cpp # new
+    Source/MyFindComponent.h   # new
 )
