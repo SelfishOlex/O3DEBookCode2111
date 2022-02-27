@@ -923,6 +923,13 @@
                 "Component_[7207737664081408841]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 7207737664081408841
+                },
+                "Component_[9384699840496256843]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9384699840496256843,
+                    "m_template": {
+                        "$type": "MyComponent"
+                    }
                 }
             }
         }
