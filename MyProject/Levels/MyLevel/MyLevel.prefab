@@ -48,6 +48,13 @@
                 "$type": "EditorLockComponent",
                 "Id": 9307224322037797205
             },
+            "Component_[9401860811822303458]": {
+                "$type": "GenericComponentWrapper",
+                "Id": 9401860811822303458,
+                "m_template": {
+                    "$type": "MyLevelComponent"
+                }
+            },
             "Component_[9562516168917670048]": {
                 "$type": "EditorVisibilityComponent",
                 "Id": 9562516168917670048
@@ -887,6 +894,13 @@
                 "Component_[11532517531316103324]": {
                     "$type": "EditorLockComponent",
                     "Id": 11532517531316103324
+                },
+                "Component_[11563621335978271785]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 11563621335978271785,
+                    "m_template": {
+                        "$type": "MyInterfaceComponent"
+                    }
                 },
                 "Component_[11951913958248453106]": {
                     "$type": "EditorVisibilityComponent",

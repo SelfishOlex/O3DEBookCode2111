@@ -4,6 +4,8 @@
 
 #include "MyComponent.h"
 #include "MyFindComponent.h"
+#include "MyInterfaceComponent.h"
+#include "MyLevelComponent.h"
 #include "MyProjectSystemComponent.h"
 
 namespace MyProject
@@ -23,6 +25,8 @@ namespace MyProject
                 MyProjectSystemComponent::CreateDescriptor(),
                 MyComponent::CreateDescriptor(),
                 MyFindComponent::CreateDescriptor(),
+                MyLevelComponent::CreateDescriptor(),
+                MyInterfaceComponent::CreateDescriptor(),
             });
         }
 
