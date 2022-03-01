@@ -14,6 +14,8 @@ set(FILES
     Source/MyLevelComponent.cpp
     Source/MyLevelComponent.h
     Include/MyProject/MyInterface.h
-    Source/MyEventComponent.cpp     # new
-    Source/MyEventComponent.h       # new
+    Source/MyEventComponent.cpp
+    Source/MyEventComponent.h
+    Source/OscillatorComponent.cpp     # new
+    Source/OscillatorComponent.h       # new
 )

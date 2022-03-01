@@ -918,6 +918,13 @@
                         ]
                     }
                 },
+                "Component_[12076214170871786334]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12076214170871786334,
+                    "m_template": {
+                        "$type": "OscillatorComponent"
+                    }
+                },
                 "Component_[12310133513486768326]": {
                     "$type": "GenericComponentWrapper",
                     "Id": 12310133513486768326,

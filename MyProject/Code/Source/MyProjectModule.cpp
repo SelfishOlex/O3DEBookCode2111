@@ -8,6 +8,7 @@
 #include "MyInterfaceComponent.h"
 #include "MyLevelComponent.h"
 #include "MyProjectSystemComponent.h"
+#include "OscillatorComponent.h"
 
 namespace MyProject
 {
@@ -29,6 +30,7 @@ namespace MyProject
                 MyLevelComponent::CreateDescriptor(),
                 MyInterfaceComponent::CreateDescriptor(),
                 MyEventComponent::CreateDescriptor(),
+                OscillatorComponent::CreateDescriptor(),
             });
         }
 
