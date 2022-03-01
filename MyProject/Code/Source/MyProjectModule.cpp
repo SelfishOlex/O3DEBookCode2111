@@ -3,6 +3,7 @@
 #include <AzCore/Module/Module.h>
 
 #include "MyComponent.h"
+#include "MyEventComponent.h"
 #include "MyFindComponent.h"
 #include "MyInterfaceComponent.h"
 #include "MyLevelComponent.h"
@@ -27,6 +28,7 @@ namespace MyProject
                 MyFindComponent::CreateDescriptor(),
                 MyLevelComponent::CreateDescriptor(),
                 MyInterfaceComponent::CreateDescriptor(),
+                MyEventComponent::CreateDescriptor(),
             });
         }
 

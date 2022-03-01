@@ -9,9 +9,11 @@ set(FILES
     Source/MyComponent.h
     Source/MyFindComponent.cpp
     Source/MyFindComponent.h
-    Source/MyInterfaceComponent.cpp # new
-    Source/MyInterfaceComponent.h   # new
-    Source/MyLevelComponent.cpp # new
-    Source/MyLevelComponent.h   # new
-    Include/MyProject/MyInterface.h   # new
+    Source/MyInterfaceComponent.cpp
+    Source/MyInterfaceComponent.h
+    Source/MyLevelComponent.cpp
+    Source/MyLevelComponent.h
+    Include/MyProject/MyInterface.h
+    Source/MyEventComponent.cpp     # new
+    Source/MyEventComponent.h       # new
 )
