@@ -16,6 +16,8 @@ set(FILES
     Include/MyProject/MyInterface.h
     Source/MyEventComponent.cpp
     Source/MyEventComponent.h
-    Source/OscillatorComponent.cpp     # new
-    Source/OscillatorComponent.h       # new
+    Source/OscillatorComponent.cpp
+    Source/OscillatorComponent.h
+    Source/MySpawnerComponent.cpp     # new
+    Source/MySpawnerComponent.h       # new
 )

@@ -32,9 +32,10 @@ ly_add_target(
             Include
     BUILD_DEPENDENCIES
         PRIVATE
-            AZ::AzFramework
             AZ::AzGameFramework
             Gem::Atom_AtomBridge.Static
+        PUBLIC
+            AZ::AzFramework
 )
 
 ly_add_target(
