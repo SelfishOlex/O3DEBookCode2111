@@ -13,6 +13,7 @@
     "icon_path": "preview.png",
     "engine": "o3de-sdk",
     "external_subdirectories": [
-        "C:/git/book/Gems/MyGem"
+        "C:/git/book/Gems/MyGem",
+        "C:/git/book/Gems/WindowPosition"
     ]
 }

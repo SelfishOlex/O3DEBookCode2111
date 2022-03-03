@@ -22,5 +22,6 @@ set(ENABLED_GEMS
     TextureAtlas
     WhiteBox
 
-    MyGem       # new
+    MyGem
+    WindowPosition  # new
 )

@@ -1,0 +1,17 @@
+{
+    "gem_name": "WindowPosition",
+    "display_name": "WindowPosition",
+    "license": "What license WindowPosition uses goes here: i.e. Apache-2.0 Or MIT",
+    "license_url": "",
+    "origin": "The primary repo for WindowPosition goes here: i.e. http://www.mydomain.com",
+    "type": "Code",
+    "summary": "A short description of WindowPosition.",
+    "canonical_tags": [
+        "Gem"
+    ],
+    "user_tags": [
+        "WindowPosition"
+    ],
+    "icon_path": "preview.png",
+    "requirements": ""
+}
