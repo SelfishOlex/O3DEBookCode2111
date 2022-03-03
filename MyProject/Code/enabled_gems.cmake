@@ -21,4 +21,6 @@ set(ENABLED_GEMS
     StartingPointInput
     TextureAtlas
     WhiteBox
+
+    MyGem       # new
 )

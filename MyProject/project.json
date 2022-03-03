@@ -12,5 +12,7 @@
     ],
     "icon_path": "preview.png",
     "engine": "o3de-sdk",
-    "external_subdirectories": []
+    "external_subdirectories": [
+        "C:/git/book/Gems/MyGem"
+    ]
 }
