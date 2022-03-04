@@ -72,3 +72,31 @@ if(PAL_TRAIT_BUILD_SERVER_SUPPORTED)
     # following ly_enable_gems lines.
     set_property(GLOBAL APPEND PROPERTY LY_LAUNCHER_SERVER_PROJECTS MyProject)
 endif()
+
+################################################################################
+# Tests
+################################################################################
+# See if globally, tests are supported
+if(PAL_TRAIT_BUILD_TESTS_SUPPORTED)
+    # We support MyProject.Tests on this platform, add MyProject.Tests target which depends on MyProject.Static
+    ly_add_target(
+        NAME MyProject.Tests ${PAL_TRAIT_TEST_TARGET_TYPE}
+        NAMESPACE Gem
+        FILES_CMAKE
+            myproject_test_files.cmake
+        INCLUDE_DIRECTORIES
+            PRIVATE
+                Tests
+                Source
+        BUILD_DEPENDENCIES
+            PRIVATE
+                AZ::AzTest
+                AZ::AzFramework
+                Gem::MyProject.Static
+    )
+
+    # Add MyProject.Tests to googletest
+    ly_add_googletest(
+        NAME Gem::MyProject.Tests
+    )
+endif()
