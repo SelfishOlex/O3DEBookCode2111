@@ -23,5 +23,6 @@ set(ENABLED_GEMS
     WhiteBox
 
     MyGem
-    WindowPosition  # new
+    WindowPosition
+    NvCloth    # new
 )
