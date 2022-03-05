@@ -1,6 +1,7 @@
 #include "MySpawnerComponent.h"
 #include <AzCore/Asset/AssetSerializer.h>
 #include <AzCore/Serialization/EditContext.h>
+#include <AzFramework/Components/TransformComponent.h>
 
 using namespace MyProject;
 
