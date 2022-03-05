@@ -20,9 +20,9 @@
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
                     "Entity_[1176639161715]",
-                    "Entity_[437731091004]",
+                    "Entity_[412984645518]",
                     "Entity_[949797666437]",
-                    "Entity_[416256254524]"
+                    "Entity_[584619228065]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -207,7 +207,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 1602361963837436591
+                            "EditorEntityId": 15997142696370995231
                         }
                     }
                 },
@@ -222,17 +222,17 @@
                 "Component_[18086214374043522055]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 18086214374043522055,
-                    "Parent Entity": "Entity_[437731091004]",
+                    "Parent Entity": "Entity_[1176639161715]",
                     "Transform Data": {
                         "Translate": [
-                            0.09834623336791992,
-                            4.620596885681152,
-                            1.0627050399780273
+                            -2.3000001907348633,
+                            -3.9368600845336914,
+                            1.0
                         ],
                         "Rotate": [
-                            2.8322525024414063,
-                            -0.06025562435388565,
-                            178.78216552734375
+                            -2.050307512283325,
+                            1.9552897214889526,
+                            -43.623355865478516
                         ]
                     }
                 },
@@ -251,6 +251,13 @@
                 "Component_[7169798125182238623]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7169798125182238623
+                },
+                "Component_[7255796294953281766]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 7255796294953281766,
+                    "m_template": {
+                        "$type": "FlyCameraInputComponent"
+                    }
                 },
                 "Component_[8866210352157164042]": {
                     "$type": "EditorInspectorComponent",
@@ -310,6 +317,7 @@
                     "Child Entity Order": [
                         "Entity_[1155164325235]",
                         "Entity_[1180934129011]",
+                        "Entity_[1163754259827]",
                         "Entity_[1159459292531]"
                     ]
                 },
@@ -403,92 +411,24 @@
                 }
             }
         },
-        "Entity_[416256254524]": {
-            "Id": "Entity_[416256254524]",
-            "Name": "Input",
-            "Components": {
-                "Component_[1515889179822250298]": {
-                    "$type": "SelectionComponent",
-                    "Id": 1515889179822250298
-                },
-                "Component_[16993765424185548064]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 16993765424185548064,
-                    "m_template": {
-                        "$type": "InputConfigurationComponent",
-                        "Input Event Bindings": {
-                            "assetId": {
-                                "guid": "{0E98ABD6-E619-5C16-9B27-D9096E4B159A}"
-                            },
-                            "assetHint": "thirdpersonmovement.inputbindings"
-                        }
-                    }
-                },
-                "Component_[17310056475322685515]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 17310056475322685515
-                },
-                "Component_[17638128734477634881]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 17638128734477634881
-                },
-                "Component_[2531625676846728605]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 2531625676846728605
-                },
-                "Component_[3102337515452968296]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 3102337515452968296
-                },
-                "Component_[4018461885713032935]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 4018461885713032935
-                },
-                "Component_[4691194453727183568]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 4691194453727183568,
-                    "Parent Entity": "Entity_[1146574390643]",
-                    "Transform Data": {
-                        "Translate": [
-                            0.0,
-                            0.10000038146972656,
-                            4.0
-                        ]
-                    }
-                },
-                "Component_[512144786736589023]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 512144786736589023
-                },
-                "Component_[5496478924293786815]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 5496478924293786815
-                },
-                "Component_[6969664780292306421]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 6969664780292306421
-                }
-            }
-        },
-        "Entity_[437731091004]": {
-            "Id": "Entity_[437731091004]",
+        "Entity_[412984645518]": {
+            "Id": "Entity_[412984645518]",
             "Name": "Chicken_Actor",
             "Components": {
                 "Component_[12917798267488243668]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 12917798267488243668
                 },
-                "Component_[17558826321039264113]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 17558826321039264113,
-                    "m_template": {
-                        "$type": "ChickenControllerComponent",
-                        "Speed": 11.0
-                    }
-                },
                 "Component_[3261249813163778338]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 3261249813163778338
+                },
+                "Component_[3541757033455142270]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 3541757033455142270,
+                    "m_template": {
+                        "$type": "ChickenControllerComponent"
+                    }
                 },
                 "Component_[3837204912784440039]": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -502,35 +442,18 @@
                         "Translate": [
                             1.9273476600646973,
                             0.3790757656097412,
-                            0.489937424659729
+                            0.046035826206207275
                         ],
                         "Rotate": [
                             0.0,
                             0.0,
-                            137.56089782714844
+                            137.56092834472656
                         ]
                     }
                 },
                 "Component_[4848458548047175816]": {
                     "$type": "EditorVisibilityComponent",
                     "Id": 4848458548047175816
-                },
-                "Component_[5613322980594436343]": {
-                    "$type": "EditorCharacterControllerComponent",
-                    "Id": 5613322980594436343,
-                    "Configuration": {
-                        "entityId": "",
-                        "Material": {
-                            "MaterialIds": [
-                                {}
-                            ]
-                        }
-                    },
-                    "ShapeConfig": {
-                        "Capsule": {
-                            "Radius": 0.30000001192092896
-                        }
-                    }
                 },
                 "Component_[5787060997243919943]": {
                     "$type": "EditorInspectorComponent",
@@ -544,8 +467,7 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 7874177159288365422,
                     "Child Entity Order": [
-                        "Entity_[1163754259827]",
-                        "Entity_[442026058300]"
+                        "Entity_[417279612814]"
                     ]
                 },
                 "Component_[8018146290632383969]": {
@@ -558,8 +480,8 @@
                 }
             }
         },
-        "Entity_[442026058300]": {
-            "Id": "Entity_[442026058300]",
+        "Entity_[417279612814]": {
+            "Id": "Entity_[417279612814]",
             "Name": "Chicken Rigidbody",
             "Components": {
                 "Component_[11254527722826929517]": {
@@ -586,13 +508,13 @@
                 "Component_[12470135924384913029]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 12470135924384913029,
-                    "Parent Entity": "Entity_[437731091004]"
+                    "Parent Entity": "Entity_[412984645518]"
                 },
                 "Component_[14919455666821657531]": {
                     "$type": "EditorEntitySortComponent",
                     "Id": 14919455666821657531,
                     "Child Entity Order": [
-                        "Entity_[446321025596]"
+                        "Entity_[421574580110]"
                     ]
                 },
                 "Component_[16643225638363527013]": {
@@ -613,8 +535,8 @@
                 }
             }
         },
-        "Entity_[446321025596]": {
-            "Id": "Entity_[446321025596]",
+        "Entity_[421574580110]": {
+            "Id": "Entity_[421574580110]",
             "Name": "Chicken_Actor",
             "Components": {
                 "Component_[10153184769011204037]": {
@@ -697,7 +619,7 @@
                 "Component_[9845606399230319505]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 9845606399230319505,
-                    "Parent Entity": "Entity_[442026058300]",
+                    "Parent Entity": "Entity_[417279612814]",
                     "Transform Data": {
                         "Rotate": [
                             0.0,
@@ -779,6 +701,73 @@
                             "SortIndex": 4
                         }
                     ]
+                }
+            }
+        },
+        "Entity_[584619228065]": {
+            "Id": "Entity_[584619228065]",
+            "Name": "Input Map",
+            "Components": {
+                "Component_[10104785134553796026]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 10104785134553796026
+                },
+                "Component_[10170934738794888885]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 10170934738794888885
+                },
+                "Component_[1020320583809453134]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1020320583809453134
+                },
+                "Component_[11141462858394454874]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 11141462858394454874,
+                    "m_template": {
+                        "$type": "InputConfigurationComponent",
+                        "Input Event Bindings": {
+                            "assetId": {
+                                "guid": "{0E98ABD6-E619-5C16-9B27-D9096E4B159A}"
+                            },
+                            "assetHint": "thirdpersonmovement.inputbindings"
+                        }
+                    }
+                },
+                "Component_[1317873160059691579]": {
+                    "$type": "SelectionComponent",
+                    "Id": 1317873160059691579
+                },
+                "Component_[15856322275047869176]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 15856322275047869176
+                },
+                "Component_[17255760986592073414]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17255760986592073414
+                },
+                "Component_[17503704209200211009]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17503704209200211009
+                },
+                "Component_[6549777242761315908]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 6549777242761315908
+                },
+                "Component_[7508799986240105726]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7508799986240105726,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            -0.007553286384791136,
+                            0.09999752044677734,
+                            4.0
+                        ]
+                    }
+                },
+                "Component_[8717179502861224480]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 8717179502861224480
                 }
             }
         },
