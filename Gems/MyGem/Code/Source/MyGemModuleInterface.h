@@ -1,4 +1,5 @@
 
+#include <ChickenControllerComponent.h>
 #include <AzCore/Memory/SystemAllocator.h>
 #include <AzCore/Module/Module.h>
 #include <MyGemSystemComponent.h>
@@ -20,6 +21,7 @@ namespace MyGem
             // This happens through the [MyComponent]::Reflect() function.
             m_descriptors.insert(m_descriptors.end(), {
                 MyGemSystemComponent::CreateDescriptor(),
+                ChickenControllerComponent::CreateDescriptor(),
                 });
         }
 

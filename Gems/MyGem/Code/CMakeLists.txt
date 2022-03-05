@@ -30,6 +30,7 @@ ly_add_target(
         PUBLIC
             AZ::AzCore
             AZ::AzFramework
+            Gem::StartingPointInput.Static
 )
 
 # Here add MyGem target, it depends on the MyGem.Static
