@@ -7,7 +7,8 @@
 
 namespace MyGem
 {
-    const StartingPointInput::InputEventNotificationId MoveFwdEventId("move forward");
+    const StartingPointInput::InputEventNotificationId
+        MoveFwdEventId("move forward");
 
     class ChickenInput
     {
@@ -18,13 +19,15 @@ namespace MyGem
     class ChickenControllerComponent
         : public AZ::Component
         , public AZ::TickBus::Handler
-        , public StartingPointInput::InputEventNotificationBus::MultiHandler
+        , public StartingPointInput::
+            InputEventNotificationBus::MultiHandler
     {
     public:
-        AZ_COMPONENT(ChickenControllerComponent, "{fe639d60-75c0-4e16-aa1a-0d44dbe6d339}");
+        AZ_COMPONENT(ChickenControllerComponent,
+            "{fe639d60-75c0-4e16-aa1a-0d44dbe6d339}");
 
         static void Reflect(AZ::ReflectContext* context);
-        
+
         // AZ::Component interface implementation
         void Activate() override;
         void Deactivate() override;

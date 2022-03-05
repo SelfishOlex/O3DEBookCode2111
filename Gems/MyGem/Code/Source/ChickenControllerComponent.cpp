@@ -8,23 +8,26 @@ namespace MyGem
 {
     using namespace StartingPointInput;
 
-    void ChickenControllerComponent::Reflect(AZ::ReflectContext* context)
+    void ChickenControllerComponent::Reflect(AZ::ReflectContext* rc)
     {
-        if (AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context))
+        if (auto sc = azrtti_cast<AZ::SerializeContext*>(rc))
         {
-            serialize->Class<ChickenControllerComponent, AZ::Component>()
-                ->Field("Speed", &ChickenControllerComponent::m_speed)
-                ->Version(1);
+            sc->Class<ChickenControllerComponent, AZ::Component>()
+              ->Field("Speed", &ChickenControllerComponent::m_speed)
+              ->Version(1);
 
-            if (AZ::EditContext* ec = serialize->GetEditContext())
+            if (AZ::EditContext* ec = sc->GetEditContext())
             {
-                ec->Class<ChickenControllerComponent>("Chicken Controller",
+                using namespace AZ::Edit;
+                ec->Class<ChickenControllerComponent>(
+                    "Chicken Controller",
                     "[Player controlled chicken]")
-                    ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
-                        ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu,
+                    ->ClassElement(ClassElements::EditorData, "")
+                    ->Attribute(
+                        Attributes::AppearsInAddComponentMenu,
                             AZ_CRC_CE("Game"))
-                        ->Attribute(AZ::Edit::Attributes::AutoExpand, true)
-                    ->DataElement(nullptr, &ChickenControllerComponent::m_speed, 
+                    ->DataElement(nullptr,
+                        &ChickenControllerComponent::m_speed,
                         "Speed", "Chicken's speed");
             }
         }
@@ -32,7 +35,8 @@ namespace MyGem
 
     void ChickenControllerComponent::Activate()
     {
-        InputEventNotificationBus::MultiHandler::BusConnect(MoveFwdEventId);
+        InputEventNotificationBus::MultiHandler::BusConnect(
+            MoveFwdEventId);
         AZ::TickBus::Handler::BusConnect();
     }
 
@@ -44,7 +48,8 @@ namespace MyGem
 
     void ChickenControllerComponent::OnPressed(float value)
     {
-        const InputEventNotificationId* inputId = InputEventNotificationBus::GetCurrentBusId();
+        const InputEventNotificationId* inputId =
+            InputEventNotificationBus::GetCurrentBusId();
         if (inputId == nullptr)
         {
             return;
@@ -56,9 +61,10 @@ namespace MyGem
         }
     }
 
-    void ChickenControllerComponent::OnReleased([[maybe_unused]] float value)
+    void ChickenControllerComponent::OnReleased(float)
     {
-        const InputEventNotificationId* inputId = InputEventNotificationBus::GetCurrentBusId();
+        const InputEventNotificationId* inputId =
+            InputEventNotificationBus::GetCurrentBusId();
         if (inputId == nullptr)
         {
             return;
@@ -70,7 +76,8 @@ namespace MyGem
         }
     }
 
-    void ChickenControllerComponent::OnTick(float, AZ::ScriptTimePoint)
+    void ChickenControllerComponent::OnTick(float,
+        AZ::ScriptTimePoint)
     {
         const ChickenInput input = CreateInput();
         ProcessInput(input);
@@ -84,18 +91,24 @@ namespace MyGem
         return input;
     }
 
-    void ChickenControllerComponent::UpdateVelocity(const ChickenInput& input)
+    void ChickenControllerComponent::UpdateVelocity(
+        const ChickenInput& input)
     {
-        const float currentHeading = GetEntity()->GetTransform()->GetWorldRotationQuaternion().GetEulerRadians().GetZ();
-        const AZ::Vector3 fwd = AZ::Vector3::CreateAxisY(input.m_forwardAxis);
-        m_velocity = AZ::Quaternion::CreateRotationZ(currentHeading).TransformVector(fwd) * m_speed;
+        const float currentHeading = GetEntity()->GetTransform()->
+            GetWorldRotationQuaternion().GetEulerRadians().GetZ();
+        const AZ::Vector3 fwd = AZ::Vector3::CreateAxisY(
+            input.m_forwardAxis);
+        m_velocity = AZ::Quaternion::CreateRotationZ(currentHeading).
+            TransformVector(fwd) * m_speed;
     }
 
-    void ChickenControllerComponent::ProcessInput(const ChickenInput& input)
+    void ChickenControllerComponent::ProcessInput(
+        const ChickenInput& input)
     {
         UpdateVelocity(input);
 
-        Physics::CharacterRequestBus::Event(GetEntityId(), 
-            &Physics::CharacterRequestBus::Events::AddVelocity, m_velocity);
+        Physics::CharacterRequestBus::Event(GetEntityId(),
+            &Physics::CharacterRequestBus::Events::AddVelocity,
+                m_velocity);
     }
 } // namespace MyGem
