@@ -24,5 +24,8 @@ set(ENABLED_GEMS
 
     MyGem
     WindowPosition
-    NvCloth    # new
+    NvCloth
+
+    LyShineExamples     # new
+    UiBasics            # new
 )

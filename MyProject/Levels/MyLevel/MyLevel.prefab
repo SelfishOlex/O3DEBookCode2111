@@ -22,7 +22,8 @@
                     "Entity_[1176639161715]",
                     "Entity_[437731091004]",
                     "Entity_[416256254524]",
-                    "Entity_[673144681107]"
+                    "Entity_[673144681107]",
+                    "Entity_[560175189794]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -243,7 +244,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 10617243621275879727
+                            "EditorEntityId": 17144816991563900683
                         }
                     }
                 },
@@ -1058,6 +1059,71 @@
                 }
             }
         },
+        "Entity_[560175189794]": {
+            "Id": "Entity_[560175189794]",
+            "Name": "UI",
+            "Components": {
+                "Component_[11736364113232903922]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11736364113232903922
+                },
+                "Component_[1267804303490457490]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 1267804303490457490
+                },
+                "Component_[14106037325674462656]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14106037325674462656,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.10000038146972656,
+                            4.0
+                        ]
+                    }
+                },
+                "Component_[14280015088216545806]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 14280015088216545806
+                },
+                "Component_[14561424575907583789]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 14561424575907583789
+                },
+                "Component_[15501528225676137939]": {
+                    "$type": "SelectionComponent",
+                    "Id": 15501528225676137939
+                },
+                "Component_[16039481548039159210]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16039481548039159210
+                },
+                "Component_[160673451879498185]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 160673451879498185,
+                    "m_template": {
+                        "$type": "UiCanvasAssetRefComponent",
+                        "CanvasAssetRef": {
+                            "AssetPath": "assets/ui/hud.uicanvas"
+                        },
+                        "IsAutoLoad": true
+                    }
+                },
+                "Component_[17137959104988252021]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17137959104988252021
+                },
+                "Component_[1813577037625657378]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 1813577037625657378
+                },
+                "Component_[2560885550827641123]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 2560885550827641123
+                }
+            }
+        },
         "Entity_[673144681107]": {
             "Id": "Entity_[673144681107]",
             "Name": "Soccer Field",
@@ -1815,7 +1881,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/0",
-                    "value": 14.736368179321289
+                    "value": 14.736368179321287
                 },
                 {
                     "op": "replace",
@@ -1860,7 +1926,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/1",
-                    "value": -10.689408302307129
+                    "value": -10.689408302307127
                 },
                 {
                     "op": "replace",
