@@ -418,9 +418,9 @@
                         "$type": "InputConfigurationComponent",
                         "Input Event Bindings": {
                             "assetId": {
-                                "guid": "{0E98ABD6-E619-5C16-9B27-D9096E4B159A}"
+                                "guid": "{B96E8FDF-4A09-5B9B-8A77-92E437FC323D}"
                             },
-                            "assetHint": "thirdpersonmovement.inputbindings"
+                            "assetHint": "mythirdpersonmovement.inputbindings"
                         }
                     }
                 },
@@ -483,7 +483,8 @@
                     "Id": 17558826321039264113,
                     "m_template": {
                         "$type": "ChickenControllerComponent",
-                        "Speed": 11.0
+                        "Speed": 11.0,
+                        "Turn Speed": 0.004999999888241291
                     }
                 },
                 "Component_[3261249813163778338]": {

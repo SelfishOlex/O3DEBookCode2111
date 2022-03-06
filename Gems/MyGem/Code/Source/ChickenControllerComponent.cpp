@@ -14,7 +14,9 @@ namespace MyGem
         {
             sc->Class<ChickenControllerComponent, AZ::Component>()
               ->Field("Speed", &ChickenControllerComponent::m_speed)
-              ->Version(1);
+              ->Field("Turn Speed",
+                    &ChickenControllerComponent::m_turnSpeed)
+              ->Version(2);
 
             if (AZ::EditContext* ec = sc->GetEditContext())
             {
@@ -27,6 +29,9 @@ namespace MyGem
                         Attributes::AppearsInAddComponentMenu,
                             AZ_CRC_CE("Game"))
                     ->DataElement(nullptr,
+                        &ChickenControllerComponent::m_turnSpeed,
+                        "Turn Speed", "Chicken's turning speed")
+                    ->DataElement(nullptr,
                         &ChickenControllerComponent::m_speed,
                         "Speed", "Chicken's speed");
             }
@@ -37,6 +42,10 @@ namespace MyGem
     {
         InputEventNotificationBus::MultiHandler::BusConnect(
             MoveFwdEventId);
+        InputEventNotificationBus::MultiHandler::BusConnect(
+            MoveRightEventId);
+        InputEventNotificationBus::MultiHandler::BusConnect(
+            RotateYawEventId);
         AZ::TickBus::Handler::BusConnect();
     }
 
@@ -59,9 +68,13 @@ namespace MyGem
         {
             m_forward = value;
         }
+        else if (*inputId == MoveRightEventId)
+        {
+            m_strafe = value;
+        }
     }
 
-    void ChickenControllerComponent::OnReleased(float)
+    void ChickenControllerComponent::OnReleased(float value)
     {
         const InputEventNotificationId* inputId =
             InputEventNotificationBus::GetCurrentBusId();
@@ -72,12 +85,31 @@ namespace MyGem
 
         if (*inputId == MoveFwdEventId)
         {
-            m_forward = 0.f;
+            m_forward = value;
+        }
+        else if (*inputId == MoveRightEventId)
+        {
+            m_strafe = value;
+        }
+    }
+
+    void ChickenControllerComponent::OnHeld(float value)
+    {
+        const InputEventNotificationId* inputId =
+            InputEventNotificationBus::GetCurrentBusId();
+        if (inputId == nullptr)
+        {
+            return;
+        }
+
+        if (*inputId == RotateYawEventId)
+        {
+            m_yaw = value;
         }
     }
 
     void ChickenControllerComponent::OnTick(float,
-        AZ::ScriptTimePoint)
+                                            AZ::ScriptTimePoint)
     {
         const ChickenInput input = CreateInput();
         ProcessInput(input);
@@ -87,8 +119,24 @@ namespace MyGem
     {
         ChickenInput input;
         input.m_forwardAxis = m_forward;
+        input.m_strafeAxis = m_strafe;
+        input.m_viewYaw = m_yaw;
 
         return input;
+    }
+
+    void ChickenControllerComponent::UpdateRotation(
+        const ChickenInput& input)
+    {
+        AZ::TransformInterface* t = GetEntity()->GetTransform();
+
+        float currentHeading = t->GetWorldRotationQuaternion().
+            GetEulerRadians().GetZ();
+        currentHeading += input.m_viewYaw * m_turnSpeed;
+        AZ::Quaternion q =
+            AZ::Quaternion::CreateRotationZ(currentHeading);
+
+        t->SetWorldRotationQuaternion(q);
     }
 
     void ChickenControllerComponent::UpdateVelocity(
@@ -98,13 +146,17 @@ namespace MyGem
             GetWorldRotationQuaternion().GetEulerRadians().GetZ();
         const AZ::Vector3 fwd = AZ::Vector3::CreateAxisY(
             input.m_forwardAxis);
+        const AZ::Vector3 strafe = AZ::Vector3::CreateAxisX(
+            input.m_strafeAxis);
+        const AZ::Vector3 combined = (fwd + strafe).GetNormalized();
         m_velocity = AZ::Quaternion::CreateRotationZ(currentHeading).
-            TransformVector(fwd) * m_speed;
+            TransformVector(combined) * m_speed;
     }
 
     void ChickenControllerComponent::ProcessInput(
         const ChickenInput& input)
     {
+        UpdateRotation(input);
         UpdateVelocity(input);
 
         Physics::CharacterRequestBus::Event(GetEntityId(),
