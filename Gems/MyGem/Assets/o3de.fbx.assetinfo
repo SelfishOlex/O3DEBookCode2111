@@ -1,0 +1,51 @@
+{
+    "values": [
+        {
+            "$type": "{5B03C8E6-8CEE-4DA0-A7FA-CD88689DD45B} MeshGroup",
+            "id": "{42544484-2ACA-5222-B449-EEC0254E7291}",
+            "name": "o3de",
+            "NodeSelectionList": {
+                "selectedNodes": [
+                    "RootNode.Text.Text_1"
+                ],
+                "unselectedNodes": [
+                    {},
+                    "RootNode",
+                    "RootNode.Light",
+                    "RootNode.Camera",
+                    "RootNode.Text",
+                    "RootNode.Text.Text_2"
+                ]
+            },
+            "MaterialSlots": [
+                "DefaultMaterial"
+            ],
+            "PhysicsMaterials": [
+                "<Default Physics Material>"
+            ]
+        },
+        {
+            "$type": "{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup",
+            "name": "o3de",
+            "nodeSelectionList": {
+                "selectedNodes": [
+                    {},
+                    "RootNode",
+                    "RootNode.Light",
+                    "RootNode.Camera",
+                    "RootNode.Text",
+                    "RootNode.Text.Text_1",
+                    "RootNode.Text.Text_2"
+                ]
+            },
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MaterialRule"
+                    }
+                ]
+            },
+            "id": "{5575E18D-ACD7-5D0F-B69B-D0B72C16C24F}"
+        }
+    ]
+}

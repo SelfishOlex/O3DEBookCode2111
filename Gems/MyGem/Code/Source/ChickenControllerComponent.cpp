@@ -16,7 +16,8 @@ namespace MyGem
               ->Field("Speed", &ChickenControllerComponent::m_speed)
               ->Field("Turn Speed",
                     &ChickenControllerComponent::m_turnSpeed)
-              ->Version(2);
+              ->Field("Gravity", &ChickenControllerComponent::m_gravity)
+              ->Version(3);
 
             if (AZ::EditContext* ec = sc->GetEditContext())
             {
@@ -31,6 +32,9 @@ namespace MyGem
                     ->DataElement(nullptr,
                         &ChickenControllerComponent::m_turnSpeed,
                         "Turn Speed", "Chicken's turning speed")
+                    ->DataElement(nullptr,
+                        &ChickenControllerComponent::m_gravity,
+                        "Gravity", "Gravity towards -Z")
                     ->DataElement(nullptr,
                         &ChickenControllerComponent::m_speed,
                         "Speed", "Chicken's speed");
@@ -72,6 +76,10 @@ namespace MyGem
         {
             m_strafe = value;
         }
+        else if (*inputId == RotateYawEventId)
+        {
+            m_yaw = value;
+        }
     }
 
     void ChickenControllerComponent::OnReleased(float value)
@@ -90,6 +98,10 @@ namespace MyGem
         else if (*inputId == MoveRightEventId)
         {
             m_strafe = value;
+        }
+        else if (*inputId == RotateYawEventId)
+        {
+            m_yaw = value;
         }
     }
 
@@ -162,5 +174,8 @@ namespace MyGem
         Physics::CharacterRequestBus::Event(GetEntityId(),
             &Physics::CharacterRequestBus::Events::AddVelocity,
                 m_velocity);
+        Physics::CharacterRequestBus::Event(GetEntityId(),
+            &Physics::CharacterRequestBus::Events::AddVelocity,
+                AZ::Vector3::CreateAxisZ(m_gravity));
     }
 } // namespace MyGem

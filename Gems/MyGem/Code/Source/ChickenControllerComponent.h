@@ -56,6 +56,7 @@ namespace MyGem
 
         float m_speed = 10.f;
         float m_turnSpeed = 1.f;
+        float m_gravity = -9.8f;
 
         float m_forward = 0.f;
         float m_strafe = 0.f;
