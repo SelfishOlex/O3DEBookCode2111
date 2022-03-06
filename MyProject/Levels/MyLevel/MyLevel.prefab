@@ -94,7 +94,7 @@
                     "Id": 7378860763541895402,
                     "Controller": {
                         "Configuration": {
-                            "Intensity": 1.0,
+                            "Intensity": 2.299999952316284,
                             "CameraEntityId": "",
                             "ShadowFilterMethod": 1
                         }
@@ -158,7 +158,43 @@
                 },
                 "Component_[5182430712893438093]": {
                     "$type": "EditorMaterialComponent",
-                    "Id": 5182430712893438093
+                    "Id": 5182430712893438093,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{099BB2A1-F76E-5B77-BCFD-B0A6249F0EA3}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/16_yellow.azmaterial"
+                                    },
+                                    "PropertyOverrides": {
+                                        "clearCoat.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        },
+                                        "emissive.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        },
+                                        "roughness.factor": {
+                                            "$type": "float",
+                                            "Value": 0.07999999821186066
+                                        },
+                                        "specularF0.factor": {
+                                            "$type": "float",
+                                            "Value": 0.44999998807907104
+                                        },
+                                        "metallic.factor": {
+                                            "$type": "float",
+                                            "Value": 0.6000000238418579
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[5675108321710651991]": {
                     "$type": "AZ::Render::EditorMeshComponent",
@@ -207,7 +243,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 6349778582196760283
+                            "EditorEntityId": 10617243621275879727
                         }
                     }
                 },
@@ -282,6 +318,9 @@
                     },
                     "ShapeConfiguration": {
                         "ShapeType": 0
+                    },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
                     }
                 },
                 "Component_[1071881191556436181]": {
@@ -322,6 +361,67 @@
                 "Component_[18259454083278348461]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 18259454083278348461
+                },
+                "Component_[2421369155400741601]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 2421369155400741601,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{95D68A9E-EC6C-5371-872D-DEB7E91F8D63}"
+                                        },
+                                        "assetHint": "materials/presets/pbr/default_grid.azmaterial"
+                                    },
+                                    "PropertyOverrides": {
+                                        "roughness.upperBound": {
+                                            "$type": "float",
+                                            "Value": 0.8999999761581421
+                                        },
+                                        "irradiance.factor": {
+                                            "$type": "float",
+                                            "Value": 0.9800000190734863
+                                        },
+                                        "baseColor.color": {
+                                            "$type": "Color",
+                                            "Value": [
+                                                1.0,
+                                                0.8483558297157288,
+                                                0.02236972562968731,
+                                                1.0
+                                            ]
+                                        },
+                                        "clearCoat.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        },
+                                        "specularF0.factor": {
+                                            "$type": "float",
+                                            "Value": 0.46000000834465027
+                                        },
+                                        "roughness.factor": {
+                                            "$type": "float",
+                                            "Value": 0.38999998569488525
+                                        },
+                                        "metallic.factor": {
+                                            "$type": "float",
+                                            "Value": 0.0
+                                        },
+                                        "emissive.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        },
+                                        "emissive.intensity": {
+                                            "$type": "float",
+                                            "Value": 0.3799999952316284
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[2878965951621931041]": {
                     "$type": "EditorRigidBodyComponent",
@@ -497,6 +597,66 @@
                 "Component_[931091830724002070]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 931091830724002070
+                }
+            }
+        },
+        "Entity_[14988652549357]": {
+            "Id": "Entity_[14988652549357]",
+            "Name": "Lights",
+            "Components": {
+                "Component_[1243708996924998263]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1243708996924998263,
+                    "Child Entity Order": [
+                        "Instance_[13601378112749]/ContainerEntity",
+                        "Instance_[13867666085101]/ContainerEntity",
+                        "Instance_[14005105038573]/ContainerEntity",
+                        "Instance_[14009400005869]/ContainerEntity"
+                    ]
+                },
+                "Component_[13841815903207514775]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 13841815903207514775,
+                    "Parent Entity": "Entity_[673144681107]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            -0.10000000149011612
+                        ]
+                    }
+                },
+                "Component_[14012653890478150648]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 14012653890478150648
+                },
+                "Component_[380594808228933925]": {
+                    "$type": "SelectionComponent",
+                    "Id": 380594808228933925
+                },
+                "Component_[4860898977241322796]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4860898977241322796
+                },
+                "Component_[4953915213733426974]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4953915213733426974
+                },
+                "Component_[5846964380382087544]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5846964380382087544
+                },
+                "Component_[5950565487385350189]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 5950565487385350189
+                },
+                "Component_[8964833180789419757]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 8964833180789419757
+                },
+                "Component_[9803054296075511169]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 9803054296075511169
                 }
             }
         },
@@ -827,6 +987,17 @@
                                                 "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
                                             },
                                             "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
+                                        },
+                                        "PropertyOverrides": {
+                                            "baseColor.color": {
+                                                "$type": "Color",
+                                                "Value": [
+                                                    0.5000076293945313,
+                                                    0.5000076293945313,
+                                                    0.5000076293945313,
+                                                    1.0
+                                                ]
+                                            }
                                         }
                                     }
                                 },
@@ -945,7 +1116,8 @@
                         "Entity_[866418209427]",
                         "Entity_[862123242131]",
                         "Instance_[2434081272467]/ContainerEntity",
-                        "Instance_[2661714539155]/ContainerEntity"
+                        "Instance_[2661714539155]/ContainerEntity",
+                        "Entity_[14988652549357]"
                     ]
                 }
             }
@@ -1006,6 +1178,24 @@
                         1.0
                     ]
                 },
+                "Component_[6791474432042222233]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 6791474432042222233,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{FD3D09E1-9B20-5761-87A2-388ADD3C966A}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/09_moderate_red.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[7103069024856498633]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7103069024856498633
@@ -1063,6 +1253,9 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
                 }
             }
@@ -1109,6 +1302,34 @@
                 "Component_[2498481642431902497]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 2498481642431902497
+                },
+                "Component_[3010069499387345308]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 3010069499387345308,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{F4DF12BC-C818-550C-AA95-F4BE4A457772}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/14_green_tex.azmaterial"
+                                    },
+                                    "PropertyOverrides": {
+                                        "metallic.factor": {
+                                            "$type": "float",
+                                            "Value": 1.0
+                                        },
+                                        "roughness.factor": {
+                                            "$type": "float",
+                                            "Value": 1.0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[4249577096000794634]": {
                     "$type": "EditorOnlyEntityComponent",
@@ -1180,6 +1401,9 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
                 }
             }
@@ -1230,6 +1454,24 @@
                 "Component_[4249577096000794634]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 4249577096000794634
+                },
+                "Component_[5343410770586304944]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 5343410770586304944,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{FD3D09E1-9B20-5761-87A2-388ADD3C966A}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/09_moderate_red.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[5883396714380671910]": {
                     "$type": "EditorNonUniformScaleComponent",
@@ -1297,6 +1539,9 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
                 }
             }
@@ -1356,6 +1601,9 @@
                                 }
                             }
                         }
+                    },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
                     }
                 },
                 "Component_[3323425415520495512]": {
@@ -1391,6 +1639,67 @@
                         "UniformScale": 5.0
                     }
                 },
+                "Component_[4796276784188783605]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 4796276784188783605,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{B8972ADB-DBA9-5807-9742-2B14453FDD96}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/13_blue.azmaterial"
+                                    },
+                                    "PropertyOverrides": {
+                                        "irradiance.factor": {
+                                            "$type": "float",
+                                            "Value": 1.0
+                                        },
+                                        "roughness.factor": {
+                                            "$type": "float",
+                                            "Value": 1.0
+                                        },
+                                        "clearCoat.factor": {
+                                            "$type": "float",
+                                            "Value": 0.8500000238418579
+                                        },
+                                        "specularF0.factor": {
+                                            "$type": "float",
+                                            "Value": 0.25999999046325684
+                                        },
+                                        "baseColor.factor": {
+                                            "$type": "float",
+                                            "Value": 1.0
+                                        },
+                                        "metallic.factor": {
+                                            "$type": "float",
+                                            "Value": 0.0
+                                        },
+                                        "irradiance.color": {
+                                            "$type": "Color",
+                                            "Value": [
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ]
+                                        },
+                                        "emissive.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        },
+                                        "clearCoat.enable": {
+                                            "$type": "bool",
+                                            "Value": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[6289442637984243902]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 6289442637984243902
@@ -1415,6 +1724,166 @@
         }
     },
     "Instances": {
+        "Instance_[13601378112749]": {
+            "Source": "Prefabs/Spot_Light.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Parent Entity",
+                    "value": "../Entity_[14988652549357]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/0",
+                    "value": -14.998933792114258
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/1",
+                    "value": 8.037284851074219
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/2",
+                    "value": 0.8676382303237915
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/0",
+                    "value": 89.99993896484375
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/1",
+                    "value": 47.84467697143555
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/2",
+                    "value": -89.99993896484375
+                }
+            ]
+        },
+        "Instance_[13867666085101]": {
+            "Source": "Prefabs/Spot_Light.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Parent Entity",
+                    "value": "../Entity_[14988652549357]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/0",
+                    "value": -14.98955249786377
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/1",
+                    "value": -10.694219589233398
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/2",
+                    "value": 0.8676435947418213
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/0",
+                    "value": -90.00000762939453
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/1",
+                    "value": 41.9127082824707
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/2",
+                    "value": 89.99999237060547
+                }
+            ]
+        },
+        "Instance_[14005105038573]": {
+            "Source": "Prefabs/Spot_Light.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Parent Entity",
+                    "value": "../Entity_[14988652549357]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/0",
+                    "value": 14.736368179321289
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/1",
+                    "value": 8.01683235168457
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/2",
+                    "value": 0.8676385879516602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/0",
+                    "value": 89.99989318847656
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/1",
+                    "value": -49.54925537109375
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/2",
+                    "value": -89.99988555908203
+                }
+            ]
+        },
+        "Instance_[14009400005869]": {
+            "Source": "Prefabs/Spot_Light.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Parent Entity",
+                    "value": "../Entity_[14988652549357]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/0",
+                    "value": 14.766368865966797
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/1",
+                    "value": -10.689408302307129
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Translate/2",
+                    "value": 0.8676437139511108
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/0",
+                    "value": -90.00000762939453
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/1",
+                    "value": -41.27132797241211
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[7419616309312026935]/Transform Data/Rotate/2",
+                    "value": 89.99996948242188
+                }
+            ]
+        },
         "Instance_[2434081272467]": {
             "Source": "Prefabs/Goal_End.prefab",
             "Patches": [

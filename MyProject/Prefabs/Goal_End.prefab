@@ -188,6 +188,24 @@
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7103069024856498633
                 },
+                "Component_[7152882274186199260]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 7152882274186199260,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{FD3D09E1-9B20-5761-87A2-388ADD3C966A}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/09_moderate_red.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[7328492673953720183]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 7328492673953720183,
@@ -241,6 +259,9 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
                 }
             }
@@ -252,6 +273,24 @@
                 "Component_[10234860265264718774]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 10234860265264718774
+                },
+                "Component_[10417075082725040726]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 10417075082725040726,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{FD3D09E1-9B20-5761-87A2-388ADD3C966A}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/09_moderate_red.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[10782436902835750255]": {
                     "$type": "SelectionComponent",
@@ -375,6 +414,9 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
                 }
             }
@@ -393,7 +435,10 @@
                 },
                 "Component_[1279725190590148915]": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 1279725190590148915
+                    "Id": 1279725190590148915,
+                    "Child Entity Order": [
+                        "Entity_[4642076333293]"
+                    ]
                 },
                 "Component_[13451943016956185751]": {
                     "$type": "EditorVisibilityComponent",
@@ -402,6 +447,24 @@
                 "Component_[13862137437636590050]": {
                     "$type": "EditorLockComponent",
                     "Id": 13862137437636590050
+                },
+                "Component_[16254531913023919030]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 16254531913023919030,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{FD3D09E1-9B20-5761-87A2-388ADD3C966A}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/09_moderate_red.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[18017991616698515594]": {
                     "$type": "AZ::Render::EditorMeshComponent",
@@ -509,7 +572,81 @@
                         },
                         "HasNonUniformScale": true
                     },
+                    "DebugDrawSettings": {
+                        "LocallyEnabled": false
+                    },
                     "HasNonUniformScale": true
+                }
+            }
+        },
+        "Entity_[4642076333293]": {
+            "Id": "Entity_[4642076333293]",
+            "Name": "Spot Light",
+            "Components": {
+                "Component_[10648790169701399128]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 10648790169701399128
+                },
+                "Component_[14711960627896397667]": {
+                    "$type": "AZ::Render::EditorAreaLightComponent",
+                    "Id": 14711960627896397667,
+                    "Controller": {
+                        "Configuration": {
+                            "LightType": 7,
+                            "Intensity": 320.0,
+                            "AttenuationRadius": 56.56854248046875,
+                            "EnableShutters": true
+                        }
+                    }
+                },
+                "Component_[16399546955029239107]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16399546955029239107
+                },
+                "Component_[16919755695081012832]": {
+                    "$type": "SelectionComponent",
+                    "Id": 16919755695081012832
+                },
+                "Component_[1813146247640795632]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 1813146247640795632
+                },
+                "Component_[451846311633323006]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 451846311633323006
+                },
+                "Component_[4699249131551876182]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 4699249131551876182
+                },
+                "Component_[5996119680958600977]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 5996119680958600977,
+                    "Parent Entity": "Entity_[2455556108947]",
+                    "Transform Data": {
+                        "Translate": [
+                            2.37442684173584,
+                            0.0,
+                            2.1110877990722656
+                        ],
+                        "Rotate": [
+                            180.0,
+                            -23.703067779541016,
+                            0.0
+                        ]
+                    }
+                },
+                "Component_[6121787585463706358]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 6121787585463706358
+                },
+                "Component_[7239903473404652328]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 7239903473404652328
+                },
+                "Component_[9965919445699262457]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 9965919445699262457
                 }
             }
         }

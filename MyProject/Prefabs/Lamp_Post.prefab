@@ -1,0 +1,662 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Lamp_Post",
+        "Components": {
+            "Component_[10078903025417359694]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 10078903025417359694
+            },
+            "Component_[13829173518559967312]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 13829173518559967312
+            },
+            "Component_[15726902750649077433]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 15726902750649077433
+            },
+            "Component_[17589782532115246192]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 17589782532115246192
+            },
+            "Component_[18426986656683429612]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 18426986656683429612,
+                "Parent Entity": ""
+            },
+            "Component_[3392327740886129858]": {
+                "$type": "EditorLockComponent",
+                "Id": 3392327740886129858
+            },
+            "Component_[7808673049196545773]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 7808673049196545773
+            },
+            "Component_[8526255588156158878]": {
+                "$type": "SelectionComponent",
+                "Id": 8526255588156158878
+            },
+            "Component_[8564026093702567159]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 8564026093702567159
+            },
+            "Component_[8745003641410890876]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 8745003641410890876,
+                "Child Entity Order": [
+                    "Entity_[9229101405421]"
+                ]
+            },
+            "Component_[9321811685209033766]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 9321811685209033766
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[9207626568941]": {
+            "Id": "Entity_[9207626568941]",
+            "Name": "Lamp Back",
+            "Components": {
+                "Component_[10996508432588472887]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 10996508432588472887
+                },
+                "Component_[11494244770507681325]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11494244770507681325
+                },
+                "Component_[13282904331818900524]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 13282904331818900524
+                },
+                "Component_[15258835240652031003]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 15258835240652031003,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 16145152050025514130
+                        },
+                        {
+                            "ComponentId": 4504070281209418331,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 15269942302176869032,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 862076403659003087,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[15269942302176869032]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 15269942302176869032,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
+                                    "subId": 284301017
+                                },
+                                "assetHint": "objects/_primitives/_box_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[16145152050025514130]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 16145152050025514130,
+                    "Parent Entity": "Entity_[9216216503533]",
+                    "Transform Data": {
+                        "Translate": [
+                            7.450580596923828e-8,
+                            -4.76837158203125e-7,
+                            -0.021152019500732422
+                        ]
+                    }
+                },
+                "Component_[18134473011068638984]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 18134473011068638984
+                },
+                "Component_[18175046533474641612]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 18175046533474641612
+                },
+                "Component_[2336927322428124130]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 2336927322428124130
+                },
+                "Component_[4504070281209418331]": {
+                    "$type": "EditorNonUniformScaleComponent",
+                    "Id": 4504070281209418331,
+                    "NonUniformScale": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.05000000074505806
+                    ]
+                },
+                "Component_[562859375836466211]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 562859375836466211
+                },
+                "Component_[862076403659003087]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 862076403659003087,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{1D83625A-4016-58F0-A94A-13B92B19F5B5}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/24_black_2-0_1-50d.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Component_[994668053999635382]": {
+                    "$type": "SelectionComponent",
+                    "Id": 994668053999635382
+                }
+            }
+        },
+        "Entity_[9211921536237]": {
+            "Id": "Entity_[9211921536237]",
+            "Name": "Lamp Post",
+            "Components": {
+                "Component_[10297156033360058634]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 10297156033360058634
+                },
+                "Component_[11057955603301880935]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11057955603301880935
+                },
+                "Component_[12811602517839168460]": {
+                    "$type": "SelectionComponent",
+                    "Id": 12811602517839168460
+                },
+                "Component_[13659047752916109766]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13659047752916109766,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 9011946724157113885
+                        },
+                        {
+                            "ComponentId": 2655272565535946265,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 1953797040202786148,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 16300663025843110328,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[16300663025843110328]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 16300663025843110328,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{1D83625A-4016-58F0-A94A-13B92B19F5B5}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/24_black_2-0_1-50d.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Component_[1953797040202786148]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 1953797040202786148,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
+                                    "subId": 284301017
+                                },
+                                "assetHint": "objects/_primitives/_box_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[2636163746084583085]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 2636163746084583085
+                },
+                "Component_[2655272565535946265]": {
+                    "$type": "EditorNonUniformScaleComponent",
+                    "Id": 2655272565535946265,
+                    "NonUniformScale": [
+                        0.05000000074505806,
+                        0.05000000074505806,
+                        0.5
+                    ]
+                },
+                "Component_[4503677500840597753]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4503677500840597753
+                },
+                "Component_[8292686136262578299]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 8292686136262578299
+                },
+                "Component_[8476847478886151523]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 8476847478886151523,
+                    "Child Entity Order": [
+                        "Entity_[9224806438125]"
+                    ]
+                },
+                "Component_[9011946724157113885]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 9011946724157113885,
+                    "Parent Entity": "Entity_[9229101405421]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.8903776407241821,
+                            -0.22015786170959473,
+                            0.34964773058891296
+                        ]
+                    }
+                },
+                "Component_[9288653115995589749]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 9288653115995589749
+                }
+            }
+        },
+        "Entity_[9216216503533]": {
+            "Id": "Entity_[9216216503533]",
+            "Name": "Spot Light",
+            "Components": {
+                "Component_[10346722701351102495]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 10346722701351102495
+                },
+                "Component_[11079746999476042882]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11079746999476042882
+                },
+                "Component_[11906500629309210589]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 11906500629309210589
+                },
+                "Component_[14937591025450086117]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 14937591025450086117
+                },
+                "Component_[16533749359862564045]": {
+                    "$type": "SelectionComponent",
+                    "Id": 16533749359862564045
+                },
+                "Component_[16794519683902995802]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 16794519683902995802,
+                    "Parent Entity": "Entity_[9229101405421]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.7735670804977417,
+                            -0.22486114501953125,
+                            0.5594263672828674
+                        ],
+                        "Rotate": [
+                            176.6829071044922,
+                            -53.0605583190918,
+                            145.51353454589844
+                        ]
+                    }
+                },
+                "Component_[17527222909963840401]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 17527222909963840401
+                },
+                "Component_[5548419631516620612]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5548419631516620612,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 16794519683902995802
+                        },
+                        {
+                            "ComponentId": 8424313559597293534,
+                            "SortIndex": 1
+                        }
+                    ]
+                },
+                "Component_[6178570784124953084]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 6178570784124953084,
+                    "Child Entity Order": [
+                        "Entity_[9220511470829]",
+                        "Entity_[9207626568941]"
+                    ]
+                },
+                "Component_[8205641638150694827]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 8205641638150694827
+                },
+                "Component_[8424313559597293534]": {
+                    "$type": "AZ::Render::EditorAreaLightComponent",
+                    "Id": 8424313559597293534,
+                    "Controller": {
+                        "Configuration": {
+                            "LightType": 7,
+                            "Intensity": 600.0,
+                            "AttenuationRadius": 77.45966339111328,
+                            "EnableShutters": true
+                        }
+                    }
+                }
+            }
+        },
+        "Entity_[9220511470829]": {
+            "Id": "Entity_[9220511470829]",
+            "Name": "Lamp Mesh",
+            "Components": {
+                "Component_[12544286714041950078]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 12544286714041950078
+                },
+                "Component_[14844095706674738844]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 14844095706674738844,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{94E3052F-2B5A-5C28-912A-C0FDC00F5CD3}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/19_white_9-5_0-05d.azmaterial"
+                                    },
+                                    "PropertyOverrides": {
+                                        "emissive.enable": {
+                                            "$type": "bool",
+                                            "Value": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Component_[17627562336287909461]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17627562336287909461
+                },
+                "Component_[17720964957103930528]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 17720964957103930528,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 3245493945325695908
+                        },
+                        {
+                            "ComponentId": 9931824174775327246,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 18051264251571966019,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 14844095706674738844,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[18051264251571966019]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 18051264251571966019,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
+                                    "subId": 274434668
+                                },
+                                "assetHint": "objects/_primitives/_sphere_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[18053060292171858513]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 18053060292171858513
+                },
+                "Component_[18234688470601672263]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 18234688470601672263
+                },
+                "Component_[2626312222946975515]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 2626312222946975515
+                },
+                "Component_[3245493945325695908]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 3245493945325695908,
+                    "Parent Entity": "Entity_[9216216503533]",
+                    "Transform Data": {
+                        "Translate": [
+                            1.4901161193847656e-8,
+                            -1.1920928955078125e-7,
+                            0.0
+                        ]
+                    }
+                },
+                "Component_[3839702222898198015]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3839702222898198015
+                },
+                "Component_[8028875071189873833]": {
+                    "$type": "SelectionComponent",
+                    "Id": 8028875071189873833
+                },
+                "Component_[9502301597883754256]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9502301597883754256
+                },
+                "Component_[9931824174775327246]": {
+                    "$type": "EditorNonUniformScaleComponent",
+                    "Id": 9931824174775327246,
+                    "NonUniformScale": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.05000000074505806
+                    ]
+                }
+            }
+        },
+        "Entity_[9224806438125]": {
+            "Id": "Entity_[9224806438125]",
+            "Name": "Lamp Connector",
+            "Components": {
+                "Component_[11750379726303193279]": {
+                    "$type": "SelectionComponent",
+                    "Id": 11750379726303193279
+                },
+                "Component_[14413054753245278561]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 14413054753245278561,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
+                                    "subId": 284301017
+                                },
+                                "assetHint": "objects/_primitives/_box_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[14779932621249261513]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14779932621249261513
+                },
+                "Component_[15474547176268250994]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 15474547176268250994
+                },
+                "Component_[15570825906524953770]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 15570825906524953770,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 2854191506562286303
+                        },
+                        {
+                            "ComponentId": 4649398119527040769,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 14413054753245278561,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 5540722352164236682,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[16020863678335460210]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16020863678335460210
+                },
+                "Component_[2854191506562286303]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 2854191506562286303,
+                    "Parent Entity": "Entity_[9211921536237]",
+                    "Transform Data": {
+                        "Translate": [
+                            -0.04912281036376953,
+                            -1.1920928955078125e-7,
+                            0.2250426709651947
+                        ]
+                    }
+                },
+                "Component_[4649398119527040769]": {
+                    "$type": "EditorNonUniformScaleComponent",
+                    "Id": 4649398119527040769,
+                    "NonUniformScale": [
+                        0.10000000149011612,
+                        0.03999999910593033,
+                        0.03999999910593033
+                    ]
+                },
+                "Component_[544120041334961271]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 544120041334961271
+                },
+                "Component_[5540722352164236682]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 5540722352164236682,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{1D83625A-4016-58F0-A94A-13B92B19F5B5}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/24_black_2-0_1-50d.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Component_[6550764253037041786]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 6550764253037041786
+                },
+                "Component_[7639507888213297886]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7639507888213297886
+                },
+                "Component_[9353034442814154320]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 9353034442814154320
+                }
+            }
+        },
+        "Entity_[9229101405421]": {
+            "Id": "Entity_[9229101405421]",
+            "Name": "Lamp Post",
+            "Components": {
+                "Component_[10531503267674483574]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 10531503267674483574,
+                    "Child Entity Order": [
+                        "Entity_[9211921536237]",
+                        "Entity_[9216216503533]"
+                    ]
+                },
+                "Component_[11580066119113595060]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11580066119113595060
+                },
+                "Component_[12114428952452583820]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12114428952452583820,
+                    "Parent Entity": "ContainerEntity",
+                    "Transform Data": {
+                        "UniformScale": 5.0
+                    }
+                },
+                "Component_[12508561146287347819]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 12508561146287347819
+                },
+                "Component_[13266221782723221763]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 13266221782723221763
+                },
+                "Component_[14708936730722006158]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 14708936730722006158,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 12114428952452583820
+                        }
+                    ]
+                },
+                "Component_[16969288631261909269]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 16969288631261909269
+                },
+                "Component_[5171684773704830290]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 5171684773704830290
+                },
+                "Component_[5306087712964730977]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5306087712964730977
+                },
+                "Component_[7658938825040220937]": {
+                    "$type": "SelectionComponent",
+                    "Id": 7658938825040220937
+                }
+            }
+        }
+    }
+}
