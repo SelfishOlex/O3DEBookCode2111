@@ -31,6 +31,8 @@ ly_add_target(
             AZ::AzCore
             AZ::AzFramework
             Gem::StartingPointInput.Static
+            Gem::LyShine.Static
+            Gem::PhysX.Static
 )
 
 # Here add MyGem target, it depends on the MyGem.Static

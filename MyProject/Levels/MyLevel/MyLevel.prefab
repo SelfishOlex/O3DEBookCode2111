@@ -244,7 +244,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 17144816991563900683
+                            "EditorEntityId": 9226042229854417745
                         }
                     }
                 },
@@ -311,6 +311,9 @@
                     "$type": "EditorColliderComponent",
                     "Id": 1045715969351039869,
                     "ColliderConfiguration": {
+                        "CollisionLayer": {
+                            "Index": 1
+                        },
                         "MaterialSelection": {
                             "MaterialIds": [
                                 {}
@@ -345,7 +348,7 @@
                     "Parent Entity": "Entity_[673144681107]",
                     "Transform Data": {
                         "Translate": [
-                            -1.5507574081420898,
+                            -1.5219192504882813,
                             -1.3745620250701904,
                             5.51551628112793
                         ]
@@ -598,6 +601,95 @@
                 "Component_[931091830724002070]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 931091830724002070
+                }
+            }
+        },
+        "Entity_[1333536123943]": {
+            "Id": "Entity_[1333536123943]",
+            "Name": "Goal 2",
+            "Components": {
+                "Component_[1006994236365023515]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1006994236365023515
+                },
+                "Component_[10505016675752622735]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10505016675752622735
+                },
+                "Component_[11376619478608248240]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11376619478608248240
+                },
+                "Component_[12803299377677266391]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 12803299377677266391
+                },
+                "Component_[14382265697132384430]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14382265697132384430,
+                    "Parent Entity": "Entity_[673144681107]",
+                    "Transform Data": {
+                        "Translate": [
+                            15.392642974853516,
+                            -1.2738416194915771,
+                            1.1621778011322021
+                        ]
+                    }
+                },
+                "Component_[1659265771316120546]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 1659265771316120546,
+                    "m_template": {
+                        "$type": "GoalDetectorComponent",
+                        "Team": 1,
+                        "Ball": "Entity_[1174366829766]",
+                        "Respawn": "Entity_[582624783131]"
+                    }
+                },
+                "Component_[1826563598925441926]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 1826563598925441926
+                },
+                "Component_[2177533719745780963]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2177533719745780963
+                },
+                "Component_[3189313055989462588]": {
+                    "$type": "SelectionComponent",
+                    "Id": 3189313055989462588
+                },
+                "Component_[4224664935403828509]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 4224664935403828509
+                },
+                "Component_[5059879528864643910]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 5059879528864643910,
+                    "ColliderConfiguration": {
+                        "CollisionGroupId": {
+                            "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                        },
+                        "Trigger": true,
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 1,
+                        "Box": {
+                            "Configuration": [
+                                0.5,
+                                4.75,
+                                2.5
+                            ]
+                        }
+                    }
+                },
+                "Component_[6926231246892677235]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 6926231246892677235
                 }
             }
         },
@@ -1124,6 +1216,148 @@
                 }
             }
         },
+        "Entity_[564263754005]": {
+            "Id": "Entity_[564263754005]",
+            "Name": "Goal 1",
+            "Components": {
+                "Component_[1006994236365023515]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1006994236365023515
+                },
+                "Component_[10505016675752622735]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10505016675752622735
+                },
+                "Component_[11376619478608248240]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11376619478608248240
+                },
+                "Component_[12803299377677266391]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 12803299377677266391
+                },
+                "Component_[14382265697132384430]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14382265697132384430,
+                    "Parent Entity": "Entity_[673144681107]",
+                    "Transform Data": {
+                        "Translate": [
+                            -15.615635871887207,
+                            -1.2738416194915771,
+                            1.1621778011322021
+                        ]
+                    }
+                },
+                "Component_[1659265771316120546]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 1659265771316120546,
+                    "m_template": {
+                        "$type": "GoalDetectorComponent",
+                        "Ball": "Entity_[1174366829766]",
+                        "Respawn": "Entity_[582624783131]"
+                    }
+                },
+                "Component_[1826563598925441926]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 1826563598925441926
+                },
+                "Component_[2177533719745780963]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2177533719745780963
+                },
+                "Component_[3189313055989462588]": {
+                    "$type": "SelectionComponent",
+                    "Id": 3189313055989462588
+                },
+                "Component_[4224664935403828509]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 4224664935403828509
+                },
+                "Component_[5059879528864643910]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 5059879528864643910,
+                    "ColliderConfiguration": {
+                        "CollisionGroupId": {
+                            "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                        },
+                        "Trigger": true,
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 1,
+                        "Box": {
+                            "Configuration": [
+                                0.5,
+                                4.75,
+                                2.5
+                            ]
+                        }
+                    }
+                },
+                "Component_[6926231246892677235]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 6926231246892677235
+                }
+            }
+        },
+        "Entity_[582624783131]": {
+            "Id": "Entity_[582624783131]",
+            "Name": "Ball Respawn",
+            "Components": {
+                "Component_[11674756090134608621]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 11674756090134608621
+                },
+                "Component_[13007430764577283706]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 13007430764577283706
+                },
+                "Component_[13991416037222250516]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13991416037222250516
+                },
+                "Component_[14036803145571571148]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14036803145571571148
+                },
+                "Component_[14294147178059294887]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14294147178059294887
+                },
+                "Component_[16766643799014742460]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16766643799014742460
+                },
+                "Component_[16777764006440733793]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16777764006440733793
+                },
+                "Component_[2874514907034291570]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 2874514907034291570
+                },
+                "Component_[401417563744829980]": {
+                    "$type": "SelectionComponent",
+                    "Id": 401417563744829980
+                },
+                "Component_[9130818010542575829]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 9130818010542575829,
+                    "Parent Entity": "Entity_[673144681107]",
+                    "Transform Data": {
+                        "Translate": [
+                            -1.5507574081420898,
+                            -1.3745620250701904,
+                            5.51551628112793
+                        ]
+                    }
+                }
+            }
+        },
         "Entity_[673144681107]": {
             "Id": "Entity_[673144681107]",
             "Name": "Soccer Field",
@@ -1176,8 +1410,11 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 9064384386395509372,
                     "Child Entity Order": [
-                        "Entity_[949797666437]",
                         "Entity_[1174366829766]",
+                        "Entity_[582624783131]",
+                        "Entity_[564263754005]",
+                        "Entity_[1333536123943]",
+                        "Entity_[949797666437]",
                         "Entity_[686029582995]",
                         "Entity_[866418209427]",
                         "Entity_[862123242131]",

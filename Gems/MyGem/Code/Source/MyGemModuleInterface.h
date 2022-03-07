@@ -1,8 +1,10 @@
-
+#pragma once
 #include <ChickenControllerComponent.h>
+#include <GoalDetectorComponent.h>
+#include <MyGemSystemComponent.h>
+#include <UiScoreComponent.h>
 #include <AzCore/Memory/SystemAllocator.h>
 #include <AzCore/Module/Module.h>
-#include <MyGemSystemComponent.h>
 
 namespace MyGem
 {
@@ -22,6 +24,8 @@ namespace MyGem
             m_descriptors.insert(m_descriptors.end(), {
                 MyGemSystemComponent::CreateDescriptor(),
                 ChickenControllerComponent::CreateDescriptor(),
+                GoalDetectorComponent::CreateDescriptor(),
+                UiScoreComponent::CreateDescriptor(),
                 });
         }
 

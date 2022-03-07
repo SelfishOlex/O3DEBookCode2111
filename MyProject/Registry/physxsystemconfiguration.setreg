@@ -7,7 +7,7 @@
                         "Layers": {
                             "LayerNames": [
                                 "Default",
-                                {},
+                                "Ball",
                                 {},
                                 {},
                                 {},
@@ -87,6 +87,15 @@
                                         "Mask": 0
                                     },
                                     "ReadOnly": true
+                                },
+                                {
+                                    "Id": {
+                                        "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                                    },
+                                    "Name": "Only Ball",
+                                    "Group": {
+                                        "Mask": 18446744073709551614
+                                    }
                                 }
                             ]
                         }
