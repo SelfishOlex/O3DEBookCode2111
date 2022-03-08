@@ -1,4 +1,5 @@
 #pragma once
+#include <ChickenAnimationComponent.h>
 #include <ChickenControllerComponent.h>
 #include <GoalDetectorComponent.h>
 #include <KickingComponent.h>
@@ -28,6 +29,7 @@ namespace MyGem
                 GoalDetectorComponent::CreateDescriptor(),
                 UiScoreComponent::CreateDescriptor(),
                 KickingComponent::CreateDescriptor(),
+                ChickenAnimationComponent::CreateDescriptor(),
                 });
         }
 

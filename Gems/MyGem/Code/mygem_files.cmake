@@ -11,6 +11,9 @@ set(FILES
     Source/UiScoreComponent.h
     Source/GoalDetectorComponent.cpp
     Source/GoalDetectorComponent.h
-    Source/KickingComponent.cpp    # new
-    Source/KickingComponent.h      # new
+    Source/KickingComponent.cpp
+    Source/KickingComponent.h
+    Source/ChickenAnimationComponent.cpp    # new
+    Source/ChickenAnimationComponent.h      # new
+    Include/MyGem/ChickenBus.h     # new
 )

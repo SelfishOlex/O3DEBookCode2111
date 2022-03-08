@@ -1,0 +1,23 @@
+<ObjectStream version="3">
+	<Class name="MotionSet" version="1" type="{FE63321D-3593-4214-AFA4-F620CDC17B9B}">
+		<Class name="AZStd::string" field="name" value="MotionSet0" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+		<Class name="AZStd::unordered_map" field="motionEntries" type="{7E795792-CEDD-52D6-ABCB-6EFC3BAF1CDA}">
+			<Class name="AZStd::pair" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="chickenidle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="chickenidle" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="objects/cloth/chicken/motions/chickenidle.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair" field="element" type="{7D28A706-15EE-5B30-B2F7-A224146B4C7F}">
+				<Class name="AZStd::string" field="value1" value="chickenwalking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="chickenwalking" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="objects/cloth/chicken/motions/chickenwalking.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+		</Class>
+		<Class name="AZStd::vector" field="childSets" type="{69F77F3B-4CDE-5995-BDC6-341621DF9A6E}"/>
+	</Class>
+</ObjectStream>
+

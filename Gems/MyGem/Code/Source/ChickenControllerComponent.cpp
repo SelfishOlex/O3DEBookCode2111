@@ -3,6 +3,7 @@
 #include <AzCore/Component/TransformBus.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <AzFramework/Physics/CharacterBus.h>
+#include <MyGem/ChickenBus.h>
 
 namespace MyGem
 {
@@ -13,11 +14,11 @@ namespace MyGem
         if (auto sc = azrtti_cast<AZ::SerializeContext*>(rc))
         {
             sc->Class<ChickenControllerComponent, AZ::Component>()
-              ->Field("Speed", &ChickenControllerComponent::m_speed)
-              ->Field("Turn Speed",
+                ->Field("Speed", &ChickenControllerComponent::m_speed)
+                ->Field("Turn Speed",
                     &ChickenControllerComponent::m_turnSpeed)
-              ->Field("Gravity", &ChickenControllerComponent::m_gravity)
-              ->Version(3);
+                ->Field("Gravity", &ChickenControllerComponent::m_gravity)
+                ->Version(3);
 
             if (AZ::EditContext* ec = sc->GetEditContext())
             {
@@ -28,7 +29,7 @@ namespace MyGem
                     ->ClassElement(ClassElements::EditorData, "")
                     ->Attribute(
                         Attributes::AppearsInAddComponentMenu,
-                            AZ_CRC_CE("Game"))
+                        AZ_CRC_CE("Game"))
                     ->DataElement(nullptr,
                         &ChickenControllerComponent::m_turnSpeed,
                         "Turn Speed", "Chicken's turning speed")
@@ -121,7 +122,7 @@ namespace MyGem
     }
 
     void ChickenControllerComponent::OnTick(float,
-                                            AZ::ScriptTimePoint)
+        AZ::ScriptTimePoint)
     {
         const ChickenInput input = CreateInput();
         ProcessInput(input);
@@ -156,13 +157,22 @@ namespace MyGem
     {
         const float currentHeading = GetEntity()->GetTransform()->
             GetWorldRotationQuaternion().GetEulerRadians().GetZ();
+
         const AZ::Vector3 fwd = AZ::Vector3::CreateAxisY(
             input.m_forwardAxis);
         const AZ::Vector3 strafe = AZ::Vector3::CreateAxisX(
             input.m_strafeAxis);
-        const AZ::Vector3 combined = (fwd + strafe).GetNormalized();
+        AZ::Vector3 combined = fwd + strafe;
+        if (combined.GetLength() > 1.f)
+        {
+            combined.Normalize();
+        }
         m_velocity = AZ::Quaternion::CreateRotationZ(currentHeading).
             TransformVector(combined) * m_speed;
+
+        ChickenNotificationBus::Event(GetEntityId(),
+            &ChickenNotificationBus::Events::OnChickenSpeedChanged,
+            m_velocity.GetLength());
     }
 
     void ChickenControllerComponent::ProcessInput(
@@ -173,9 +183,9 @@ namespace MyGem
 
         Physics::CharacterRequestBus::Event(GetEntityId(),
             &Physics::CharacterRequestBus::Events::AddVelocity,
-                m_velocity);
+            m_velocity);
         Physics::CharacterRequestBus::Event(GetEntityId(),
             &Physics::CharacterRequestBus::Events::AddVelocity,
-                AZ::Vector3::CreateAxisZ(m_gravity));
+            AZ::Vector3::CreateAxisZ(m_gravity));
     }
 } // namespace MyGem

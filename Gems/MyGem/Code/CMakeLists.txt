@@ -33,6 +33,7 @@ ly_add_target(
             Gem::StartingPointInput.Static
             Gem::LyShine.Static
             Gem::PhysX.Static
+            Gem::EMotionFXStaticLib
 )
 
 # Here add MyGem target, it depends on the MyGem.Static

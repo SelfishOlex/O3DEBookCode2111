@@ -23,7 +23,8 @@
                     "Entity_[437731091004]",
                     "Entity_[416256254524]",
                     "Entity_[673144681107]",
-                    "Entity_[560175189794]"
+                    "Entity_[560175189794]",
+                    "Entity_[841492897830]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -244,7 +245,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 14170681021806823694
+                            "EditorEntityId": 14659539929841130300
                         }
                     }
                 },
@@ -904,8 +905,16 @@
         },
         "Entity_[437731091004]": {
             "Id": "Entity_[437731091004]",
-            "Name": "Chicken_Actor",
+            "Name": "Chicken",
             "Components": {
+                "Component_[12568865151165252742]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12568865151165252742,
+                    "m_template": {
+                        "$type": "ChickenAnimationComponent",
+                        "Actor": "Entity_[446321025596]"
+                    }
+                },
                 "Component_[12917798267488243668]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 12917798267488243668
@@ -1066,6 +1075,32 @@
                     "$type": "EditorLockComponent",
                     "Id": 12307288056972997582
                 },
+                "Component_[14323267767717292571]": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 14323267767717292571,
+                    "AnimGraphAsset": {
+                        "assetId": {
+                            "guid": "{134EC72C-693C-56D2-857B-F3D590FD6ACA}"
+                        },
+                        "assetHint": "animation/chicken.animgraph"
+                    },
+                    "MotionSetAsset": {
+                        "assetId": {
+                            "guid": "{BEA51605-1BDD-5F43-AB50-ED68D972541A}"
+                        },
+                        "assetHint": "animation/chicken.motionset"
+                    },
+                    "ActiveMotionSetName": "MotionSet0",
+                    "ParameterDefaults": {
+                        "Parameters": [
+                            {
+                                "$type": "AzFramework::ScriptPropertyNumber",
+                                "id": 254213878,
+                                "name": "Speed"
+                            }
+                        ]
+                    }
+                },
                 "Component_[16388291370935886976]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 16388291370935886976
@@ -1094,21 +1129,6 @@
                         "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
                     },
                     "AttachmentTarget": ""
-                },
-                "Component_[2933618168100824891]": {
-                    "$type": "EditorSimpleMotionComponent",
-                    "Id": 2933618168100824891,
-                    "Configuration": {
-                        "MotionAsset": {
-                            "assetId": {
-                                "guid": "{37045429-A151-5646-97CF-BE931A35C0FC}",
-                                "subId": 2264735902
-                            },
-                            "assetHint": "objects/cloth/chicken/motions/chickenidle.motion"
-                        },
-                        "Loop": true,
-                        "PlaySpeed": 1.2000000476837158
-                    }
                 },
                 "Component_[3482722103355682975]": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -1643,6 +1663,69 @@
                         "LocallyEnabled": false
                     },
                     "HasNonUniformScale": true
+                }
+            }
+        },
+        "Entity_[841492897830]": {
+            "Id": "Entity_[841492897830]",
+            "Name": "Entity1",
+            "Components": {
+                "Component_[10293242804163781682]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 10293242804163781682
+                },
+                "Component_[10676119176970447086]": {
+                    "$type": "EditorActorComponent",
+                    "Id": 10676119176970447086,
+                    "AttachmentTarget": ""
+                },
+                "Component_[11847877089670201638]": {
+                    "$type": "SelectionComponent",
+                    "Id": 11847877089670201638
+                },
+                "Component_[12208427093071437762]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 12208427093071437762
+                },
+                "Component_[14098185788759959213]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14098185788759959213,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.10000038146972656,
+                            4.0
+                        ]
+                    }
+                },
+                "Component_[15301549497264183073]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 15301549497264183073
+                },
+                "Component_[170780218890507246]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 170780218890507246
+                },
+                "Component_[4729264348476858016]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4729264348476858016
+                },
+                "Component_[4755180754968189873]": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 4755180754968189873
+                },
+                "Component_[7732914091568932511]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 7732914091568932511
+                },
+                "Component_[7764663263827448415]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 7764663263827448415
+                },
+                "Component_[807712618258794304]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 807712618258794304
                 }
             }
         },
