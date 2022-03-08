@@ -6,9 +6,11 @@ set(FILES
     Source/MyGemSystemComponent.h
     Source/ChickenControllerComponent.cpp
     Source/ChickenControllerComponent.h
-    Include/MyGem/UiScoreBus.h          # new
-    Source/UiScoreComponent.cpp         # new
-    Source/UiScoreComponent.h           # new
-    Source/GoalDetectorComponent.cpp    # new
-    Source/GoalDetectorComponent.h      # new
+    Include/MyGem/UiScoreBus.h
+    Source/UiScoreComponent.cpp
+    Source/UiScoreComponent.h
+    Source/GoalDetectorComponent.cpp
+    Source/GoalDetectorComponent.h
+    Source/KickingComponent.cpp    # new
+    Source/KickingComponent.h      # new
 )

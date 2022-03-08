@@ -244,7 +244,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 9226042229854417745
+                            "EditorEntityId": 14170681021806823694
                         }
                     }
                 },
@@ -432,12 +432,13 @@
                     "Id": 2878965951621931041,
                     "Configuration": {
                         "entityId": "",
-                        "Mass": 523.5988159179688,
+                        "Compute Mass": false,
+                        "Mass": 200.0,
                         "Inertia tensor": {
                             "roll": 0.0,
                             "pitch": 0.0,
                             "yaw": 0.0,
-                            "scale": 0.019098592922091484
+                            "scale": 0.05000000074505806
                         }
                     }
                 },
@@ -693,6 +694,87 @@
                 }
             }
         },
+        "Entity_[1344022427920]": {
+            "Id": "Entity_[1344022427920]",
+            "Name": "Kick Trigger",
+            "Components": {
+                "Component_[11195188511672132150]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11195188511672132150
+                },
+                "Component_[11370282608328712682]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11370282608328712682
+                },
+                "Component_[11677934764134938668]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11677934764134938668
+                },
+                "Component_[12604580677188095538]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12604580677188095538,
+                    "m_template": {
+                        "$type": "KickingComponent",
+                        "Ball": "Entity_[1174366829766]"
+                    }
+                },
+                "Component_[13146837644369455045]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 13146837644369455045,
+                    "ColliderConfiguration": {
+                        "CollisionGroupId": {
+                            "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                        },
+                        "Trigger": true,
+                        "Position": [
+                            0.0,
+                            0.0,
+                            0.5
+                        ],
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 0,
+                        "Sphere": {
+                            "Radius": 0.4000000059604645
+                        }
+                    }
+                },
+                "Component_[13254370420284694647]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13254370420284694647
+                },
+                "Component_[14923876794789245803]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14923876794789245803
+                },
+                "Component_[15475095060622703041]": {
+                    "$type": "SelectionComponent",
+                    "Id": 15475095060622703041
+                },
+                "Component_[17051042344062935487]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 17051042344062935487,
+                    "Parent Entity": "Entity_[437731091004]"
+                },
+                "Component_[3977556706650328334]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3977556706650328334
+                },
+                "Component_[5706400292477770921]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5706400292477770921
+                },
+                "Component_[663569460426518227]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 663569460426518227
+                }
+            }
+        },
         "Entity_[14988652549357]": {
             "Id": "Entity_[14988652549357]",
             "Name": "Lights",
@@ -903,7 +985,8 @@
                     "Id": 7874177159288365422,
                     "Child Entity Order": [
                         "Entity_[1163754259827]",
-                        "Entity_[442026058300]"
+                        "Entity_[442026058300]",
+                        "Entity_[1344022427920]"
                     ]
                 },
                 "Component_[8018146290632383969]": {
