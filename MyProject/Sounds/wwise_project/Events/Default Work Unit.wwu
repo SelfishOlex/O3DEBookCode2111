@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{38F9DE7B-567A-48FA-BD3E-9FE4CC20D971}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{38F9DE7B-567A-48FA-BD3E-9FE4CC20D971}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Cheer" ID="{EF351FE6-6530-4467-ABF0-A3AF91312402}">
+					<ChildrenList>
+						<Action Name="" ID="{E3338770-9C70-453A-802F-4D9EBD68BDF4}" ShortID="525142344">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cheer" ID="{BAEBE7DE-B808-4909-9A95-0C97DAFE4802}" WorkUnitID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Cheer" ID="{03F70F23-04E5-4033-8B56-5A58F7755D84}">
+					<ChildrenList>
+						<Action Name="" ID="{62F1BCDE-0FC0-4F42-A258-E5C1B9BEFB8B}" ShortID="129987903">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cheer" ID="{BAEBE7DE-B808-4909-9A95-0C97DAFE4802}" WorkUnitID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

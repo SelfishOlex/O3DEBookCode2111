@@ -23,7 +23,8 @@
                     "Entity_[437731091004]",
                     "Entity_[416256254524]",
                     "Entity_[673144681107]",
-                    "Entity_[560175189794]"
+                    "Entity_[560175189794]",
+                    "Entity_[3061194428550]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -244,7 +245,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 14659539929841130300
+                            "EditorEntityId": 3027064223107077534
                         }
                     }
                 },
@@ -832,6 +833,60 @@
                 "Component_[9803054296075511169]": {
                     "$type": "EditorDisabledCompositionComponent",
                     "Id": 9803054296075511169
+                }
+            }
+        },
+        "Entity_[3061194428550]": {
+            "Id": "Entity_[3061194428550]",
+            "Name": "Music",
+            "Components": {
+                "Component_[12010892075000328844]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 12010892075000328844
+                },
+                "Component_[12542626761087942831]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 12542626761087942831
+                },
+                "Component_[13296184090222493410]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 13296184090222493410
+                },
+                "Component_[13445177982523735666]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 13445177982523735666,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.10000038146972656,
+                            4.0
+                        ]
+                    }
+                },
+                "Component_[16532972286257892770]": {
+                    "$type": "SelectionComponent",
+                    "Id": 16532972286257892770
+                },
+                "Component_[2138098213727762051]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 2138098213727762051
+                },
+                "Component_[360925014501643312]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 360925014501643312
+                },
+                "Component_[461400467273390862]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 461400467273390862
+                },
+                "Component_[7142091317377350557]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 7142091317377350557
+                },
+                "Component_[7404913200682976949]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7404913200682976949
                 }
             }
         },

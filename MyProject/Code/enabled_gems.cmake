@@ -26,6 +26,8 @@ set(ENABLED_GEMS
     WindowPosition
     NvCloth
 
-    LyShineExamples     # new
-    UiBasics            # new
+    LyShineExamples
+    UiBasics
+
+    AudioEngineWwise
 )

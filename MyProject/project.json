@@ -11,7 +11,7 @@
         "MyProject"
     ],
     "icon_path": "preview.png",
-    "engine": "o3de-sdk",
+    "engine": "my-o3de-2111",
     "external_subdirectories": [
         "C:/git/book/Gems/MyGem",
         "C:/git/book/Gems/WindowPosition"
