@@ -37,6 +37,12 @@ namespace MyGem
                 ;
             }
         }
+
+        if (auto bc = azrtti_cast<AZ::BehaviorContext*>(rc))
+        {
+            bc->EBus<UiScoreNotificationBus>("ScoreNotificationBus")
+                ->Handler<ScoreNotificationHandler>();
+        }
     }
 
     GoalDetectorComponent::GoalDetectorComponent()

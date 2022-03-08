@@ -23,8 +23,7 @@
                     "Entity_[437731091004]",
                     "Entity_[416256254524]",
                     "Entity_[673144681107]",
-                    "Entity_[560175189794]",
-                    "Entity_[841492897830]"
+                    "Entity_[560175189794]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -1075,6 +1074,26 @@
                     "$type": "EditorLockComponent",
                     "Id": 12307288056972997582
                 },
+                "Component_[13234208521462894353]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 13234208521462894353,
+                    "m_name": "celebrate.scriptcanvas",
+                    "runtimeDataIsValid": true,
+                    "runtimeDataOverrides": {
+                        "source": {
+                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                            "path": {
+                                "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\celebrate.scriptcanvas"
+                            }
+                        }
+                    },
+                    "sourceHandle": {
+                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                        "path": {
+                            "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\celebrate.scriptcanvas"
+                        }
+                    }
+                },
                 "Component_[14323267767717292571]": {
                     "$type": "EditorAnimGraphComponent",
                     "Id": 14323267767717292571,
@@ -1097,6 +1116,11 @@
                                 "$type": "AzFramework::ScriptPropertyNumber",
                                 "id": 254213878,
                                 "name": "Speed"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3259074755,
+                                "name": "Celebrating"
                             }
                         ]
                     }
@@ -1663,69 +1687,6 @@
                         "LocallyEnabled": false
                     },
                     "HasNonUniformScale": true
-                }
-            }
-        },
-        "Entity_[841492897830]": {
-            "Id": "Entity_[841492897830]",
-            "Name": "Entity1",
-            "Components": {
-                "Component_[10293242804163781682]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 10293242804163781682
-                },
-                "Component_[10676119176970447086]": {
-                    "$type": "EditorActorComponent",
-                    "Id": 10676119176970447086,
-                    "AttachmentTarget": ""
-                },
-                "Component_[11847877089670201638]": {
-                    "$type": "SelectionComponent",
-                    "Id": 11847877089670201638
-                },
-                "Component_[12208427093071437762]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 12208427093071437762
-                },
-                "Component_[14098185788759959213]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 14098185788759959213,
-                    "Parent Entity": "Entity_[1146574390643]",
-                    "Transform Data": {
-                        "Translate": [
-                            0.0,
-                            0.10000038146972656,
-                            4.0
-                        ]
-                    }
-                },
-                "Component_[15301549497264183073]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 15301549497264183073
-                },
-                "Component_[170780218890507246]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 170780218890507246
-                },
-                "Component_[4729264348476858016]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 4729264348476858016
-                },
-                "Component_[4755180754968189873]": {
-                    "$type": "EditorAnimGraphComponent",
-                    "Id": 4755180754968189873
-                },
-                "Component_[7732914091568932511]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 7732914091568932511
-                },
-                "Component_[7764663263827448415]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 7764663263827448415
-                },
-                "Component_[807712618258794304]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 807712618258794304
                 }
             }
         },
