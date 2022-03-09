@@ -1,6 +1,5 @@
 
 set(FILES
-    Include/MyGem/MyGemBus.h
     Source/MyGemModuleInterface.h
     Source/MyGemSystemComponent.cpp
     Source/MyGemSystemComponent.h
@@ -13,7 +12,9 @@ set(FILES
     Source/GoalDetectorComponent.h
     Source/KickingComponent.cpp
     Source/KickingComponent.h
-    Source/ChickenAnimationComponent.cpp    # new
-    Source/ChickenAnimationComponent.h      # new
-    Include/MyGem/ChickenBus.h     # new
+    Source/ChickenAnimationComponent.cpp
+    Source/ChickenAnimationComponent.h
+    Include/MyGem/ChickenBus.h
+
+    Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml # new
 )

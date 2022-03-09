@@ -20,6 +20,7 @@ ly_add_target(
     NAMESPACE Gem
     FILES_CMAKE
         mygem_files.cmake
+        mygem_autogen_files.cmake
         ${pal_dir}/mygem_${PAL_PLATFORM_NAME_LOWERCASE}_files.cmake
     INCLUDE_DIRECTORIES
         PUBLIC
@@ -34,6 +35,13 @@ ly_add_target(
             Gem::LyShine.Static
             Gem::PhysX.Static
             Gem::EMotionFXStaticLib
+            # For autogen components
+            Gem::Multiplayer.Static
+    AUTOGEN_RULES
+        *.AutoComponent.xml,AutoComponent_Header.jinja,$path/$fileprefix.AutoComponent.h
+        *.AutoComponent.xml,AutoComponent_Source.jinja,$path/$fileprefix.AutoComponent.cpp
+        *.AutoComponent.xml,AutoComponentTypes_Header.jinja,$path/AutoComponentTypes.h
+        *.AutoComponent.xml,AutoComponentTypes_Source.jinja,$path/AutoComponentTypes.cpp
 )
 
 # Here add MyGem target, it depends on the MyGem.Static

@@ -7,6 +7,7 @@
 #include <UiScoreComponent.h>
 #include <AzCore/Memory/SystemAllocator.h>
 #include <AzCore/Module/Module.h>
+#include <Source/AutoGen/AutoComponentTypes.h>
 
 namespace MyGem
 {
@@ -14,15 +15,13 @@ namespace MyGem
         : public AZ::Module
     {
     public:
-        AZ_RTTI(MyGemModuleInterface, "{c3adc159-98b4-4a2e-9029-06f2a4ed0dfb}", AZ::Module);
-        AZ_CLASS_ALLOCATOR(MyGemModuleInterface, AZ::SystemAllocator, 0);
+        AZ_RTTI(MyGemModuleInterface,
+            "{c3adc159-98b4-4a2e-9029-06f2a4ed0dfb}", AZ::Module);
+        AZ_CLASS_ALLOCATOR(MyGemModuleInterface,
+            AZ::SystemAllocator, 0);
 
         MyGemModuleInterface()
         {
-            // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
-            // Add ALL components descriptors associated with this gem to m_descriptors.
-            // This will associate the AzTypeInfo information for the components with the the SerializeContext, BehaviorContext and EditContext.
-            // This happens through the [MyComponent]::Reflect() function.
             m_descriptors.insert(m_descriptors.end(), {
                 MyGemSystemComponent::CreateDescriptor(),
                 ChickenControllerComponent::CreateDescriptor(),
@@ -31,12 +30,16 @@ namespace MyGem
                 KickingComponent::CreateDescriptor(),
                 ChickenAnimationComponent::CreateDescriptor(),
                 });
+
+            //< Register multiplayer components
+            CreateComponentDescriptors(m_descriptors);
         }
 
         /**
          * Add required SystemComponents to the SystemEntity.
          */
-        AZ::ComponentTypeList GetRequiredSystemComponents() const override
+        AZ::ComponentTypeList
+            GetRequiredSystemComponents() const override
         {
             return AZ::ComponentTypeList{
                 azrtti_typeid<MyGemSystemComponent>(),

@@ -17,15 +17,6 @@ namespace MyGem
         AZ_COMPONENT(MyGemEditorSystemComponent, "{89ad59bd-c4fd-4819-90fc-bd8a358d6255}", BaseSystemComponent);
         static void Reflect(AZ::ReflectContext* context);
 
-        MyGemEditorSystemComponent();
-        ~MyGemEditorSystemComponent();
-
-    private:
-        static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
-        static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
-        static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
-        static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
-
         // AZ::Component
         void Activate() override;
         void Deactivate() override;
