@@ -1,0 +1,16 @@
+<ATLConfig atl_name="my_controls">
+	<AudioTriggers>
+		<ATLTrigger atl_name="Stop_Cheer">
+			<WwiseEvent wwise_name="Stop_Cheer"/>
+		</ATLTrigger>
+		<ATLTrigger atl_name="Play_Cheer">
+			<WwiseEvent wwise_name="Play_Cheer"/>
+		</ATLTrigger>
+	</AudioTriggers>
+	<AudioPreloads>
+		<ATLPreloadRequest atl_name="preload" atl_type="AutoLoad">
+			<WwiseFile wwise_name="main.bnk"/>
+		</ATLPreloadRequest>
+	</AudioPreloads>
+</ATLConfig>
+

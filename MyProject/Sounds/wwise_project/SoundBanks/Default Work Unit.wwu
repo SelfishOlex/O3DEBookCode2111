@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{2F8F2552-6FE1-4F17-BE6B-AF2656FC0D15}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{00ACD4A2-9336-4350-A9A2-3102DF5B0843}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{2F8F2552-6FE1-4F17-BE6B-AF2656FC0D15}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{00ACD4A2-9336-4350-A9A2-3102DF5B0843}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{2276C58F-C694-4CB3-A631-E9BDE252334A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Cheer" ID="{DD3220EA-E74F-4026-8DF8-3AB014624B7F}" WorkUnitID="{D083A46D-F642-4C46-B56A-55579DEA0C6A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cheer" ID="{0008C990-49D6-4E42-B40A-A25DB3C60805}" WorkUnitID="{D083A46D-F642-4C46-B56A-55579DEA0C6A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

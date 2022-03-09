@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{095821F8-7101-4F7A-9418-B8AF28117768}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{095821F8-7101-4F7A-9418-B8AF28117768}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Cheer" ID="{BAEBE7DE-B808-4909-9A95-0C97DAFE4802}" ShortID="687674574">
+				<Sound Name="Cheer" ID="{E3B537C4-729A-49AB-BFDD-1D5972A99438}" ShortID="223671249">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3693A635-4210-4A49-8492-C37C832695F0}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6BCAAB3-5DA4-44DB-AD11-064749423A14}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F2045A47-9E6F-4B9A-89E8-56C4B4E78B2E}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F36F6D35-BB46-4391-9C88-2EA2F349CCDA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="mixkit-girls-audience-applause-510" ID="{7570FA1E-7682-4E86-8CF1-68DBC6FF90C7}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-							</PropertyList>
+						<AudioFileSource Name="mixkit-girls-audience-applause-510" ID="{F6DE3539-085E-494C-B496-565FB2EC920F}">
 							<Language>SFX</Language>
 							<AudioFile>mixkit-girls-audience-applause-510.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="527167903"/>
+								<MediaID ID="975490081"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="mixkit-girls-audience-applause-510" ID="{7570FA1E-7682-4E86-8CF1-68DBC6FF90C7}" Platform="Linked"/>
+						<ActiveSource Name="mixkit-girls-audience-applause-510" ID="{F6DE3539-085E-494C-B496-565FB2EC920F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

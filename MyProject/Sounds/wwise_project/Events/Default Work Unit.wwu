@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{38F9DE7B-567A-48FA-BD3E-9FE4CC20D971}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{D083A46D-F642-4C46-B56A-55579DEA0C6A}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{38F9DE7B-567A-48FA-BD3E-9FE4CC20D971}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{D083A46D-F642-4C46-B56A-55579DEA0C6A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Cheer" ID="{EF351FE6-6530-4467-ABF0-A3AF91312402}">
+				<Event Name="Play_Cheer" ID="{0008C990-49D6-4E42-B40A-A25DB3C60805}">
 					<ChildrenList>
-						<Action Name="" ID="{E3338770-9C70-453A-802F-4D9EBD68BDF4}" ShortID="525142344">
+						<Action Name="" ID="{629A2645-729A-4C91-994C-3DD325456A49}" ShortID="207302216">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cheer" ID="{BAEBE7DE-B808-4909-9A95-0C97DAFE4802}" WorkUnitID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}"/>
+									<ObjectRef Name="Cheer" ID="{E3B537C4-729A-49AB-BFDD-1D5972A99438}" WorkUnitID="{095821F8-7101-4F7A-9418-B8AF28117768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Cheer" ID="{03F70F23-04E5-4033-8B56-5A58F7755D84}">
+				<Event Name="Stop_Cheer" ID="{DD3220EA-E74F-4026-8DF8-3AB014624B7F}">
 					<ChildrenList>
-						<Action Name="" ID="{62F1BCDE-0FC0-4F42-A258-E5C1B9BEFB8B}" ShortID="129987903">
+						<Action Name="" ID="{590106D5-1A04-4F87-8F13-0994A6C9BBC7}" ShortID="546995705">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cheer" ID="{BAEBE7DE-B808-4909-9A95-0C97DAFE4802}" WorkUnitID="{8520A646-5813-4FC2-8D7C-1AACF86CC875}"/>
+									<ObjectRef Name="Cheer" ID="{E3B537C4-729A-49AB-BFDD-1D5972A99438}" WorkUnitID="{095821F8-7101-4F7A-9418-B8AF28117768}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
