@@ -24,7 +24,7 @@
                     "Entity_[416256254524]",
                     "Entity_[673144681107]",
                     "Entity_[560175189794]",
-                    "Entity_[3061194428550]"
+                    "Entity_[673950240415]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -245,7 +245,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 3027064223107077534
+                            "EditorEntityId": 815052529271385090
                         }
                     }
                 },
@@ -833,60 +833,6 @@
                 "Component_[9803054296075511169]": {
                     "$type": "EditorDisabledCompositionComponent",
                     "Id": 9803054296075511169
-                }
-            }
-        },
-        "Entity_[3061194428550]": {
-            "Id": "Entity_[3061194428550]",
-            "Name": "Music",
-            "Components": {
-                "Component_[12010892075000328844]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 12010892075000328844
-                },
-                "Component_[12542626761087942831]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 12542626761087942831
-                },
-                "Component_[13296184090222493410]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 13296184090222493410
-                },
-                "Component_[13445177982523735666]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 13445177982523735666,
-                    "Parent Entity": "Entity_[1146574390643]",
-                    "Transform Data": {
-                        "Translate": [
-                            0.0,
-                            0.10000038146972656,
-                            4.0
-                        ]
-                    }
-                },
-                "Component_[16532972286257892770]": {
-                    "$type": "SelectionComponent",
-                    "Id": 16532972286257892770
-                },
-                "Component_[2138098213727762051]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 2138098213727762051
-                },
-                "Component_[360925014501643312]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 360925014501643312
-                },
-                "Component_[461400467273390862]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 461400467273390862
-                },
-                "Component_[7142091317377350557]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 7142091317377350557
-                },
-                "Component_[7404913200682976949]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 7404913200682976949
                 }
             }
         },
@@ -1604,6 +1550,97 @@
                         "Instance_[2661714539155]/ContainerEntity",
                         "Entity_[14988652549357]"
                     ]
+                }
+            }
+        },
+        "Entity_[673950240415]": {
+            "Id": "Entity_[673950240415]",
+            "Name": "Goal Cheering",
+            "Components": {
+                "Component_[10548110611084547397]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10548110611084547397
+                },
+                "Component_[12908580601831602946]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12908580601831602946,
+                    "m_template": {
+                        "$type": "AudioProxyComponent"
+                    }
+                },
+                "Component_[13577070321771329786]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13577070321771329786
+                },
+                "Component_[1378637450930746999]": {
+                    "$type": "EditorAudioTriggerComponent",
+                    "Id": 1378637450930746999,
+                    "Play Trigger": {
+                        "controlName": "Play_Cheer"
+                    },
+                    "Stop Trigger": {
+                        "controlName": "Stop_Cheer"
+                    }
+                },
+                "Component_[14642763304846395765]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 14642763304846395765
+                },
+                "Component_[1528789848239088302]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 1528789848239088302
+                },
+                "Component_[16673419785174531730]": {
+                    "$type": "SelectionComponent",
+                    "Id": 16673419785174531730
+                },
+                "Component_[16898418174976677019]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16898418174976677019
+                },
+                "Component_[3990238948506914690]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 3990238948506914690,
+                    "m_name": "cheer.scriptcanvas",
+                    "runtimeDataIsValid": true,
+                    "runtimeDataOverrides": {
+                        "source": {
+                            "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
+                            "path": {
+                                "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\cheer.scriptcanvas"
+                            }
+                        }
+                    },
+                    "sourceHandle": {
+                        "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
+                        "path": {
+                            "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\cheer.scriptcanvas"
+                        }
+                    }
+                },
+                "Component_[5887610333268788637]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 5887610333268788637
+                },
+                "Component_[6082354503726441147]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 6082354503726441147,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.10000038146972656,
+                            4.0
+                        ]
+                    }
+                },
+                "Component_[8474126247915454086]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 8474126247915454086
+                },
+                "Component_[9493192170490306091]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9493192170490306091
                 }
             }
         },
