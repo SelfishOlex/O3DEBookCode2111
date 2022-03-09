@@ -8,7 +8,7 @@
 		</ATLTrigger>
 	</AudioTriggers>
 	<AudioPreloads>
-		<ATLPreloadRequest atl_name="preload" atl_type="AutoLoad">
+		<ATLPreloadRequest atl_name="main" atl_type="AutoLoad">
 			<WwiseFile wwise_name="main.bnk"/>
 		</ATLPreloadRequest>
 	</AudioPreloads>
