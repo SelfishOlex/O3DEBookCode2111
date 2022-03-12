@@ -2,8 +2,8 @@
 <Component
     Name="MyFirstNetworkComponent"
     Namespace="MyGem"
-    OverrideComponent="false"
-    OverrideController="false"
-    OverrideInclude=""
+    OverrideComponent="true"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/MyFirstNetworkComponent.h"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 </Component>

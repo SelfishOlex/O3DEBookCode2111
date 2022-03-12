@@ -1075,26 +1075,6 @@
                     "$type": "EditorLockComponent",
                     "Id": 12307288056972997582
                 },
-                "Component_[13234208521462894353]": {
-                    "$type": "EditorScriptCanvasComponent",
-                    "Id": 13234208521462894353,
-                    "m_name": "celebrate.scriptcanvas",
-                    "runtimeDataIsValid": true,
-                    "runtimeDataOverrides": {
-                        "source": {
-                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
-                            "path": {
-                                "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\celebrate.scriptcanvas"
-                            }
-                        }
-                    },
-                    "sourceHandle": {
-                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
-                        "path": {
-                            "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\celebrate.scriptcanvas"
-                        }
-                    }
-                },
                 "Component_[14323267767717292571]": {
                     "$type": "EditorAnimGraphComponent",
                     "Id": 14323267767717292571,
@@ -1124,6 +1104,21 @@
                                 "name": "Celebrating"
                             }
                         ]
+                    }
+                },
+                "Component_[15298150969763781771]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 15298150969763781771,
+                    "m_name": "celebrate.scriptcanvas",
+                    "runtimeDataOverrides": {
+                        "source": {
+                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                            "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
+                        }
+                    },
+                    "sourceHandle": {
+                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                        "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
                     }
                 },
                 "Component_[16388291370935886976]": {
@@ -1602,20 +1597,13 @@
                     "$type": "EditorScriptCanvasComponent",
                     "Id": 3990238948506914690,
                     "m_name": "cheer.scriptcanvas",
-                    "runtimeDataIsValid": true,
                     "runtimeDataOverrides": {
                         "source": {
-                            "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
-                            "path": {
-                                "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\cheer.scriptcanvas"
-                            }
+                            "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}"
                         }
                     },
                     "sourceHandle": {
-                        "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
-                        "path": {
-                            "m_path": "C:\\git\\book\\MyProject\\scriptcanvas\\cheer.scriptcanvas"
-                        }
+                        "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}"
                     }
                 },
                 "Component_[5887610333268788637]": {
