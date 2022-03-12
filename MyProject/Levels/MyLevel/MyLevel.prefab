@@ -24,7 +24,8 @@
                     "Entity_[416256254524]",
                     "Entity_[673144681107]",
                     "Entity_[560175189794]",
-                    "Entity_[673950240415]"
+                    "Entity_[673950240415]",
+                    "Instance_[1196432299921]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -245,7 +246,7 @@
                     "Controller": {
                         "Configuration": {
                             "Field of View": 55.0,
-                            "EditorEntityId": 815052529271385090
+                            "EditorEntityId": 12644669828318545237
                         }
                     }
                 },
@@ -1599,11 +1600,13 @@
                     "m_name": "cheer.scriptcanvas",
                     "runtimeDataOverrides": {
                         "source": {
-                            "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}"
+                            "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
+                            "path": "C:/git/book/MyProject/scriptcanvas/cheer.scriptcanvas"
                         }
                     },
                     "sourceHandle": {
-                        "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}"
+                        "id": "{0751C1B4-253A-5803-A6EC-18F7D3FA35A3}",
+                        "path": "C:/git/book/MyProject/scriptcanvas/cheer.scriptcanvas"
                     }
                 },
                 "Component_[5887610333268788637]": {
@@ -2234,6 +2237,31 @@
         }
     },
     "Instances": {
+        "Instance_[1196432299921]": {
+            "Source": "Prefabs/Multiplayer_Test.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Parent Entity",
+                    "value": "../Entity_[1146574390643]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/0",
+                    "value": 1.7043272256851196
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/1",
+                    "value": -1.3613262176513672
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/2",
+                    "value": 0.8985908031463623
+                }
+            ]
+        },
         "Instance_[13601378112749]": {
             "Source": "Prefabs/Spot_Light.prefab",
             "Patches": [

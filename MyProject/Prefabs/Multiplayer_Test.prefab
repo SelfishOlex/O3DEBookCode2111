@@ -1,0 +1,165 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Multiplayer_Test",
+        "Components": {
+            "Component_[12947807210401929816]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 12947807210401929816
+            },
+            "Component_[16223764272586785722]": {
+                "$type": "SelectionComponent",
+                "Id": 16223764272586785722
+            },
+            "Component_[18345831952106636965]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 18345831952106636965
+            },
+            "Component_[2335749096248799882]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 2335749096248799882,
+                "Child Entity Order": [
+                    "Entity_[1205022234513]"
+                ]
+            },
+            "Component_[2582267402745501666]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 2582267402745501666
+            },
+            "Component_[2945885300184392118]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 2945885300184392118
+            },
+            "Component_[5665104342303254396]": {
+                "$type": "EditorLockComponent",
+                "Id": 5665104342303254396
+            },
+            "Component_[6558224919865415728]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 6558224919865415728
+            },
+            "Component_[7177256374668453837]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 7177256374668453837
+            },
+            "Component_[895298361247318488]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 895298361247318488,
+                "Parent Entity": ""
+            },
+            "Component_[9300001191923491424]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 9300001191923491424
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[1205022234513]": {
+            "Id": "Entity_[1205022234513]",
+            "Name": "Multiplayer Test",
+            "Components": {
+                "Component_[1121010691332037946]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 1121010691332037946,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
+                                    "subId": 284301017
+                                },
+                                "assetHint": "objects/_primitives/_box_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[11365212050973507354]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11365212050973507354
+                },
+                "Component_[13719711518111966725]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 13719711518111966725,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[14182358026659716682]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 14182358026659716682
+                },
+                "Component_[14217507065311943758]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 14217507065311943758
+                },
+                "Component_[14255963758260707776]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 14255963758260707776,
+                    "m_template": {
+                        "$type": "MyGem::MyFirstNetworkComponent"
+                    }
+                },
+                "Component_[14880420198243047632]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 14880420198243047632,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[17742227237024541587]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17742227237024541587
+                },
+                "Component_[3442548132257780499]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3442548132257780499
+                },
+                "Component_[5308781090887528261]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5308781090887528261
+                },
+                "Component_[5733391190910650296]": {
+                    "$type": "SelectionComponent",
+                    "Id": 5733391190910650296
+                },
+                "Component_[6383174363393613762]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 6383174363393613762
+                },
+                "Component_[7145321415650419768]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 7145321415650419768,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 7543043618792580145
+                        },
+                        {
+                            "ComponentId": 14255963758260707776,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 13719711518111966725,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 1121010691332037946,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[7543043618792580145]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7543043618792580145,
+                    "Parent Entity": "ContainerEntity",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            0.9974944591522217
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
