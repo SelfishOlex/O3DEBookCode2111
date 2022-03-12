@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Component
+    Name="ChickenComponent"
+    Namespace="MyGem"
+    OverrideComponent="false"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/ChickenComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+</Component>

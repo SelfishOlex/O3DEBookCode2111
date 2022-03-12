@@ -1,6 +1,7 @@
 #pragma once
 #include <ChickenAnimationComponent.h>
 #include <ChickenControllerComponent.h>
+#include <ChickenSpawnComponent.h>
 #include <GoalDetectorComponent.h>
 #include <KickingComponent.h>
 #include <MyGemSystemComponent.h>
@@ -29,6 +30,7 @@ namespace MyGem
                 UiScoreComponent::CreateDescriptor(),
                 KickingComponent::CreateDescriptor(),
                 ChickenAnimationComponent::CreateDescriptor(),
+                ChickenSpawnComponent::CreateDescriptor(),
                 });
 
             //< Register multiplayer components

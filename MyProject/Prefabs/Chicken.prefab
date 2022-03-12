@@ -1,0 +1,687 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Chicken",
+        "Components": {
+            "Component_[11030613188148032868]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 11030613188148032868
+            },
+            "Component_[13197498681543383239]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 13197498681543383239
+            },
+            "Component_[15178114738679344108]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 15178114738679344108
+            },
+            "Component_[17978870114497002706]": {
+                "$type": "EditorLockComponent",
+                "Id": 17978870114497002706
+            },
+            "Component_[184210179122146743]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 184210179122146743,
+                "Child Entity Order": [
+                    "Entity_[685112393862]"
+                ]
+            },
+            "Component_[193151844616629333]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 193151844616629333
+            },
+            "Component_[2373121510765934075]": {
+                "$type": "SelectionComponent",
+                "Id": 2373121510765934075
+            },
+            "Component_[5274107993997079659]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 5274107993997079659,
+                "Parent Entity": ""
+            },
+            "Component_[7727693687037110538]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 7727693687037110538
+            },
+            "Component_[896566420882550887]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 896566420882550887
+            },
+            "Component_[9234112852350723285]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 9234112852350723285
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[676522459270]": {
+            "Id": "Entity_[676522459270]",
+            "Name": "Chicken Rigidbody",
+            "Components": {
+                "Component_[11254527722826929517]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 11254527722826929517
+                },
+                "Component_[11752612383131299817]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11752612383131299817,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 12470135924384913029
+                        }
+                    ]
+                },
+                "Component_[12004522441155896281]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12004522441155896281
+                },
+                "Component_[12327847693349375221]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 12327847693349375221
+                },
+                "Component_[12470135924384913029]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12470135924384913029,
+                    "Parent Entity": "Entity_[685112393862]"
+                },
+                "Component_[14919455666821657531]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14919455666821657531,
+                    "Child Entity Order": [
+                        "Entity_[680817426566]"
+                    ]
+                },
+                "Component_[16643225638363527013]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 16643225638363527013
+                },
+                "Component_[17083722249682325420]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17083722249682325420
+                },
+                "Component_[3193199229668798593]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 3193199229668798593,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[4249899715629282449]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 4249899715629282449,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[4274252334406790321]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 4274252334406790321
+                },
+                "Component_[786957291078135994]": {
+                    "$type": "SelectionComponent",
+                    "Id": 786957291078135994
+                }
+            }
+        },
+        "Entity_[680817426566]": {
+            "Id": "Entity_[680817426566]",
+            "Name": "Chicken_Actor",
+            "Components": {
+                "Component_[10153184769011204037]": {
+                    "$type": "SelectionComponent",
+                    "Id": 10153184769011204037
+                },
+                "Component_[10613604957653763066]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 10613604957653763066,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[12307288056972997582]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 12307288056972997582
+                },
+                "Component_[14323267767717292571]": {
+                    "$type": "EditorAnimGraphComponent",
+                    "Id": 14323267767717292571,
+                    "AnimGraphAsset": {
+                        "assetId": {
+                            "guid": "{134EC72C-693C-56D2-857B-F3D590FD6ACA}"
+                        },
+                        "assetHint": "animation/chicken.animgraph"
+                    },
+                    "MotionSetAsset": {
+                        "assetId": {
+                            "guid": "{BEA51605-1BDD-5F43-AB50-ED68D972541A}"
+                        },
+                        "assetHint": "animation/chicken.motionset"
+                    },
+                    "ActiveMotionSetName": "MotionSet0",
+                    "ParameterDefaults": {
+                        "Parameters": [
+                            {
+                                "$type": "AzFramework::ScriptPropertyNumber",
+                                "id": 254213878,
+                                "name": "Speed"
+                            },
+                            {
+                                "$type": "AzFramework::ScriptPropertyBoolean",
+                                "id": 3259074755,
+                                "name": "Celebrating"
+                            }
+                        ]
+                    }
+                },
+                "Component_[15298150969763781771]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 15298150969763781771,
+                    "m_name": "celebrate.scriptcanvas",
+                    "runtimeDataOverrides": {
+                        "source": {
+                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                            "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
+                        }
+                    },
+                    "sourceHandle": {
+                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                        "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
+                    }
+                },
+                "Component_[16388291370935886976]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 16388291370935886976
+                },
+                "Component_[17273633015317842366]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 17273633015317842366
+                },
+                "Component_[18385928157765337756]": {
+                    "$type": "EditorActorComponent",
+                    "Id": 18385928157765337756,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{3E4C6A29-92A4-523E-8739-F3E64957569E}",
+                            "subId": 166954688
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "objects/cloth/chicken/actor/chicken.actor"
+                    },
+                    "MaterialPerLOD": [
+                        {
+                            "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
+                        }
+                    ],
+                    "MaterialPerActor": {
+                        "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
+                    },
+                    "AttachmentTarget": ""
+                },
+                "Component_[3482722103355682975]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 3482722103355682975
+                },
+                "Component_[4826327274018205895]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 4826327274018205895
+                },
+                "Component_[5939417605550024797]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 5939417605550024797
+                },
+                "Component_[5972366552007342404]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 5972366552007342404,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[7236637452394054627]": {
+                    "$type": "EditorClothComponent",
+                    "Id": 7236637452394054627,
+                    "Configuration": {
+                        "Mesh Node": "chicken_mohawk_1",
+                        "Mass": 4.0,
+                        "Remove Static Triangles": false
+                    }
+                },
+                "Component_[868427789695884987]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 868427789695884987
+                },
+                "Component_[9845606399230319505]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 9845606399230319505,
+                    "Parent Entity": "Entity_[676522459270]",
+                    "Transform Data": {
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            -0.00006830000347690657
+                        ]
+                    }
+                },
+                "Component_[9927411050130082647]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 9927411050130082647,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 668669130
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
+                                        },
+                                        "PropertyOverrides": {
+                                            "baseColor.color": {
+                                                "$type": "Color",
+                                                "Value": [
+                                                    0.5000076293945313,
+                                                    0.5000076293945313,
+                                                    0.5000076293945313,
+                                                    1.0
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1541321207
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{6114C408-26EE-51DC-8733-A07800BF4991}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_eye_mat.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2608524672
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{80F92051-203E-52CE-B4D6-E3AED21795C9}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_mohawkmat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Component_[9979479216337101498]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 9979479216337101498,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 9845606399230319505
+                        },
+                        {
+                            "ComponentId": 18385928157765337756,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 9927411050130082647,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 7236637452394054627,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 14323267767717292571,
+                            "SortIndex": 4
+                        },
+                        {
+                            "ComponentId": 15298150969763781771,
+                            "SortIndex": 5
+                        }
+                    ]
+                }
+            }
+        },
+        "Entity_[685112393862]": {
+            "Id": "Entity_[685112393862]",
+            "Name": "Chicken",
+            "Components": {
+                "Component_[12568865151165252742]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12568865151165252742,
+                    "m_template": {
+                        "$type": "ChickenAnimationComponent",
+                        "Actor": "Entity_[680817426566]"
+                    }
+                },
+                "Component_[12917798267488243668]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12917798267488243668
+                },
+                "Component_[14287832103145009356]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 14287832103145009356,
+                    "m_template": {
+                        "$type": "MyGem::ChickenComponent"
+                    }
+                },
+                "Component_[17558826321039264113]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 17558826321039264113,
+                    "m_template": {
+                        "$type": "ChickenControllerComponent",
+                        "Speed": 6.0,
+                        "Turn Speed": 0.004999999888241291
+                    }
+                },
+                "Component_[3261249813163778338]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3261249813163778338
+                },
+                "Component_[3837204912784440039]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 3837204912784440039
+                },
+                "Component_[4272963378099646759]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 4272963378099646759,
+                    "Parent Entity": "ContainerEntity"
+                },
+                "Component_[4848458548047175816]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4848458548047175816
+                },
+                "Component_[5613322980594436343]": {
+                    "$type": "EditorCharacterControllerComponent",
+                    "Id": 5613322980594436343,
+                    "Configuration": {
+                        "entityId": "",
+                        "CollisionLayer": {
+                            "Index": 1
+                        },
+                        "CollisionGroupId": {
+                            "GroupId": "{FEE58D88-3950-45B8-92F3-9D3C560C5AB1}"
+                        },
+                        "Material": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        },
+                        "StepHeight": 0.10000000149011612
+                    },
+                    "ShapeConfig": {
+                        "Capsule": {
+                            "Radius": 0.30000001192092896
+                        }
+                    }
+                },
+                "Component_[5787060997243919943]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5787060997243919943,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 4272963378099646759
+                        },
+                        {
+                            "ComponentId": 5613322980594436343,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 12568865151165252742,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 17558826321039264113,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[6276486142459507390]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 6276486142459507390,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[7804170251266531779]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 7804170251266531779
+                },
+                "Component_[7874177159288365422]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 7874177159288365422,
+                    "Child Entity Order": [
+                        "Entity_[689407361158]",
+                        "Entity_[676522459270]",
+                        "Entity_[693702328454]"
+                    ]
+                },
+                "Component_[8018146290632383969]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 8018146290632383969
+                },
+                "Component_[8426637723647331754]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 8426637723647331754,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[8452360690590857075]": {
+                    "$type": "SelectionComponent",
+                    "Id": 8452360690590857075
+                }
+            }
+        },
+        "Entity_[689407361158]": {
+            "Id": "Entity_[689407361158]",
+            "Name": "Camera",
+            "Components": {
+                "Component_[11895140916889160460]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11895140916889160460
+                },
+                "Component_[16880285896855930892]": {
+                    "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                    "Id": 16880285896855930892,
+                    "Controller": {
+                        "Configuration": {
+                            "Field of View": 55.0,
+                            "EditorEntityId": 18012022166937240182
+                        }
+                    }
+                },
+                "Component_[16898091459302872451]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 16898091459302872451,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[17187464423780271193]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 17187464423780271193
+                },
+                "Component_[17495696818315413311]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17495696818315413311
+                },
+                "Component_[18086214374043522055]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 18086214374043522055,
+                    "Parent Entity": "Entity_[685112393862]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0971837043762207,
+                            -2.9790191650390625,
+                            1.7937473058700562
+                        ],
+                        "Rotate": [
+                            -16.199729919433594,
+                            -0.14017777144908905,
+                            0.2750926911830902
+                        ]
+                    }
+                },
+                "Component_[18387556550380114975]": {
+                    "$type": "SelectionComponent",
+                    "Id": 18387556550380114975
+                },
+                "Component_[18420763316865738114]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 18420763316865738114,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[2654521436129313160]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2654521436129313160
+                },
+                "Component_[5265045084611556958]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5265045084611556958
+                },
+                "Component_[7169798125182238623]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7169798125182238623
+                },
+                "Component_[8866210352157164042]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 8866210352157164042,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 18086214374043522055
+                        },
+                        {
+                            "ComponentId": 16880285896855930892,
+                            "SortIndex": 1
+                        }
+                    ]
+                },
+                "Component_[9129253381063760879]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9129253381063760879
+                }
+            }
+        },
+        "Entity_[693702328454]": {
+            "Id": "Entity_[693702328454]",
+            "Name": "Kick Trigger",
+            "Components": {
+                "Component_[11195188511672132150]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11195188511672132150,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 17051042344062935487
+                        },
+                        {
+                            "ComponentId": 13146837644369455045,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 12604580677188095538,
+                            "SortIndex": 2
+                        }
+                    ]
+                },
+                "Component_[11259549302868293418]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 11259549302868293418,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[11370282608328712682]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11370282608328712682
+                },
+                "Component_[11677934764134938668]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11677934764134938668
+                },
+                "Component_[12604580677188095538]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12604580677188095538,
+                    "m_template": {
+                        "$type": "KickingComponent",
+                        "Ball": ""
+                    }
+                },
+                "Component_[13146837644369455045]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 13146837644369455045,
+                    "ColliderConfiguration": {
+                        "CollisionGroupId": {
+                            "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                        },
+                        "Trigger": true,
+                        "Position": [
+                            0.0,
+                            0.0,
+                            0.5
+                        ],
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 0,
+                        "Sphere": {
+                            "Radius": 0.4000000059604645
+                        }
+                    }
+                },
+                "Component_[13254370420284694647]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13254370420284694647
+                },
+                "Component_[14923876794789245803]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14923876794789245803
+                },
+                "Component_[15475095060622703041]": {
+                    "$type": "SelectionComponent",
+                    "Id": 15475095060622703041
+                },
+                "Component_[17051042344062935487]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 17051042344062935487,
+                    "Parent Entity": "Entity_[685112393862]"
+                },
+                "Component_[3977556706650328334]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3977556706650328334
+                },
+                "Component_[5196174838536898169]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 5196174838536898169,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[5706400292477770921]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5706400292477770921
+                },
+                "Component_[663569460426518227]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 663569460426518227
+                }
+            }
+        }
+    }
+}

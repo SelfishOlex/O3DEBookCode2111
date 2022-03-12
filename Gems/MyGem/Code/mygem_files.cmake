@@ -16,8 +16,13 @@ set(FILES
     Source/ChickenAnimationComponent.h
     Include/MyGem/ChickenBus.h
 
-    # new
     Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
     Source/Multiplayer/MyFirstNetworkComponent.h
     Source/Multiplayer/MyFirstNetworkComponent.cpp
+    # new
+    Source/ChickenSpawnComponent.h
+    Source/ChickenSpawnComponent.cpp
+    Source/AutoGen/ChickenComponent.AutoComponent.xml
+    Source/Multiplayer/ChickenComponent.h
+    Source/Multiplayer/ChickenComponent.cpp
 )
