@@ -35,11 +35,11 @@ namespace MyGem
         UiScoreNotificationBus::Handler::BusDisconnect();
     }
 
-    void UiScoreComponent::OnTeamScored(int team)
+    void UiScoreComponent::OnTeamScoreChanged(int team, int score)
     {
         if (team >= 0 && team <= 1)
         {
-            m_teams[team]++;
+            m_teams[team] = score;
             char buffer[10];
             azsnprintf(buffer, 10,
                 "%d : %d", m_teams[0], m_teams[1]);

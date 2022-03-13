@@ -9,7 +9,7 @@ namespace MyGem
         : public AZ::ComponentBus
     {
     public:
-        virtual void OnTeamScored(int team) = 0;
+        virtual void OnTeamScoreChanged(int team, int score) = 0;
     };
 
     using UiScoreNotificationBus = AZ::EBus<UiScoreNotifications>;
@@ -21,11 +21,11 @@ namespace MyGem
     public:
         AZ_EBUS_BEHAVIOR_BINDER(ScoreNotificationHandler,
             "", AZ::SystemAllocator,
-            OnTeamScored);
+            OnTeamScoreChanged);
 
-        void OnTeamScored(int team) override
+        void OnTeamScoreChanged(int team, int score) override
         {
-            Call(FN_OnTeamScored, team);
+            Call(FN_OnTeamScoreChanged, team, score);
         }
     };
 }

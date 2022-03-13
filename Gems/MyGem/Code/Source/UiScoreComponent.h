@@ -19,7 +19,7 @@ namespace MyGem
         void Deactivate() override;
 
         // UiScoreNotificationBus interface
-        void OnTeamScored(int team) override;
+        void OnTeamScoreChanged(int team, int score) override;
 
     private:
         int m_teams[2] = { 0, 0 };

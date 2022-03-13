@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Component
+    Name="GoalDetectorComponent"
+    Namespace="MyGem"
+    OverrideComponent="true"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/GoalDetectorComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<NetworkProperty Type="int" Name="Score" Init="0"
+	    ReplicateFrom="Authority" ReplicateTo="Client"
+        IsRewindable="false" IsPredictable="false" IsPublic="true"
+        Container="Object" ExposeToEditor="false"
+	    ExposeToScript="true" GenerateEventBindings="true"
+        Description="Current score on this side"/>
+
+	<ArchetypeProperty Type="int" Name="Team" Init="0"
+        ExposeToEditor="true" />
+</Component>

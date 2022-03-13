@@ -1,0 +1,172 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Goal_1",
+        "Components": {
+            "Component_[1381307764541149578]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 1381307764541149578,
+                "Parent Entity": ""
+            },
+            "Component_[15390534497177044386]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 15390534497177044386
+            },
+            "Component_[16112204762756249202]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 16112204762756249202
+            },
+            "Component_[16421779454212527323]": {
+                "$type": "EditorLockComponent",
+                "Id": 16421779454212527323
+            },
+            "Component_[2928528708821038288]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 2928528708821038288
+            },
+            "Component_[4262946089016359423]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 4262946089016359423
+            },
+            "Component_[7224338680051725756]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 7224338680051725756
+            },
+            "Component_[803904515562045997]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 803904515562045997,
+                "Child Entity Order": [
+                    "Entity_[714844408632]"
+                ]
+            },
+            "Component_[8360611797845837344]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 8360611797845837344
+            },
+            "Component_[8525402762778541459]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 8525402762778541459
+            },
+            "Component_[9799144856195695692]": {
+                "$type": "SelectionComponent",
+                "Id": 9799144856195695692
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[714844408632]": {
+            "Id": "Entity_[714844408632]",
+            "Name": "Goal 1",
+            "Components": {
+                "Component_[1006994236365023515]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1006994236365023515,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 14382265697132384430
+                        },
+                        {
+                            "ComponentId": 5059879528864643910,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 12297498474473774662,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 4668445003576440513,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 13111976618886474447,
+                            "SortIndex": 4
+                        }
+                    ]
+                },
+                "Component_[10505016675752622735]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10505016675752622735
+                },
+                "Component_[11376619478608248240]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11376619478608248240
+                },
+                "Component_[12297498474473774662]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 12297498474473774662,
+                    "m_template": {
+                        "$type": "MyGem::GoalDetectorComponent"
+                    }
+                },
+                "Component_[12803299377677266391]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 12803299377677266391
+                },
+                "Component_[13111976618886474447]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 13111976618886474447,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[14382265697132384430]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14382265697132384430,
+                    "Parent Entity": "ContainerEntity"
+                },
+                "Component_[1826563598925441926]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 1826563598925441926
+                },
+                "Component_[2177533719745780963]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2177533719745780963
+                },
+                "Component_[3189313055989462588]": {
+                    "$type": "SelectionComponent",
+                    "Id": 3189313055989462588
+                },
+                "Component_[4224664935403828509]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 4224664935403828509
+                },
+                "Component_[4668445003576440513]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 4668445003576440513,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[5059879528864643910]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 5059879528864643910,
+                    "ColliderConfiguration": {
+                        "CollisionGroupId": {
+                            "GroupId": "{07939411-00A9-4FA6-812D-86E52DA92BD3}"
+                        },
+                        "Trigger": true,
+                        "MaterialSelection": {
+                            "MaterialIds": [
+                                {}
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 1,
+                        "Box": {
+                            "Configuration": [
+                                0.5,
+                                4.75,
+                                2.5
+                            ]
+                        }
+                    }
+                },
+                "Component_[6926231246892677235]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 6926231246892677235
+                }
+            }
+        }
+    }
+}
