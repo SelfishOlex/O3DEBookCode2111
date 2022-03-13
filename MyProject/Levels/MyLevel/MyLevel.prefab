@@ -24,7 +24,6 @@
                     "Entity_[673144681107]",
                     "Entity_[560175189794]",
                     "Entity_[673950240415]",
-                    "Instance_[1196432299921]/ContainerEntity",
                     "Entity_[663637557382]"
                 ]
             },
@@ -1780,31 +1779,6 @@
         }
     },
     "Instances": {
-        "Instance_[1196432299921]": {
-            "Source": "Prefabs/Multiplayer_Test.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/0",
-                    "value": 1.7043272256851196
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/1",
-                    "value": -1.3613262176513672
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[895298361247318488]/Transform Data/Translate/2",
-                    "value": 0.8985908031463623
-                }
-            ]
-        },
         "Instance_[13601378112749]": {
             "Source": "Prefabs/Spot_Light.prefab",
             "Patches": [
@@ -2016,7 +1990,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Transform Data/Translate/1",
-                    "value": -2.7639503479003906
+                    "value": -2.76395034790039
                 },
                 {
                     "op": "replace",

@@ -375,15 +375,6 @@
                         "$type": "MyGem::ChickenComponent"
                     }
                 },
-                "Component_[17558826321039264113]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 17558826321039264113,
-                    "m_template": {
-                        "$type": "ChickenControllerComponent",
-                        "Speed": 6.0,
-                        "Turn Speed": 0.004999999888241291
-                    }
-                },
                 "Component_[3261249813163778338]": {
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 3261249813163778338
@@ -400,6 +391,13 @@
                 "Component_[4848458548047175816]": {
                     "$type": "EditorVisibilityComponent",
                     "Id": 4848458548047175816
+                },
+                "Component_[5545320548130459496]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 5545320548130459496,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkCharacterComponent"
+                    }
                 },
                 "Component_[5613322980594436343]": {
                     "$type": "EditorCharacterControllerComponent",
@@ -453,6 +451,13 @@
                         "$type": "Multiplayer::NetworkTransformComponent"
                     }
                 },
+                "Component_[7650187872977307002]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 7650187872977307002,
+                    "m_template": {
+                        "$type": "Multiplayer::LocalPredictionPlayerInputComponent"
+                    }
+                },
                 "Component_[7804170251266531779]": {
                     "$type": "EditorLockComponent",
                     "Id": 7804170251266531779
@@ -480,6 +485,16 @@
                 "Component_[8452360690590857075]": {
                     "$type": "SelectionComponent",
                     "Id": 8452360690590857075
+                },
+                "Component_[9059681424865748001]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9059681424865748001,
+                    "m_template": {
+                        "$type": "MyGem::ChickenMovementComponent",
+                        "WalkSpeed": 6.0,
+                        "TurnSpeed": 0.004999999888241291,
+                        "Gravity": -9.800000190734863
+                    }
                 }
             }
         },

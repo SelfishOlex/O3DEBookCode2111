@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Component
+    Name="ChickenMovementComponent"
+    Namespace="MyGem"
+    OverrideComponent="false"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/ChickenMovementComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <ComponentRelation Constraint="Required" HasController="true"
+      Name="NetworkTransformComponent" Namespace="Multiplayer"
+      Include="Multiplayer/Components/NetworkTransformComponent.h"/>
+    <ComponentRelation Constraint="Required" HasController="true"
+      Name="NetworkCharacterComponent" Namespace="Multiplayer"
+      Include="Multiplayer/Components/NetworkCharacterComponent.h"/>
+
+    <NetworkInput Type="float" Name="ForwardAxis" Init="0.0f" />
+    <NetworkInput Type="float" Name="StrafeAxis"  Init="0.0f" />
+    <NetworkInput Type="float" Name="ViewYaw"     Init="0.0f" />
+    <NetworkInput Type="uint8_t"   Name="ResetCount"  Init="0" />
+
+    <ArchetypeProperty Type="float"  Name="WalkSpeed"
+                       Init="6.0f"  ExposeToEditor="true" />
+    <ArchetypeProperty Type="float"  Name="TurnSpeed"
+                       Init="0.005f"   ExposeToEditor="true" />
+    <ArchetypeProperty Type="float"  Name="Gravity"
+                       Init="-9.8f" ExposeToEditor="true" />
+</Component>

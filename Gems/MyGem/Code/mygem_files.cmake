@@ -19,10 +19,15 @@ set(FILES
     Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
     Source/Multiplayer/MyFirstNetworkComponent.h
     Source/Multiplayer/MyFirstNetworkComponent.cpp
-    # new
+
     Source/ChickenSpawnComponent.h
     Source/ChickenSpawnComponent.cpp
     Source/AutoGen/ChickenComponent.AutoComponent.xml
     Source/Multiplayer/ChickenComponent.h
     Source/Multiplayer/ChickenComponent.cpp
+
+    # new
+    Source/AutoGen/ChickenMovementComponent.AutoComponent.xml
+    Source/Multiplayer/ChickenMovementComponent.h
+    Source/Multiplayer/ChickenMovementComponent.cpp
 )
