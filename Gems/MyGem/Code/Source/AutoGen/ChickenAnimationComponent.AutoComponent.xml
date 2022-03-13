@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Component
+    Name="ChickenAnimationComponent"
+    Namespace="MyGem"
+    OverrideComponent="true"
+    OverrideController="false"
+    OverrideInclude="Multiplayer/ChickenAnimationComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <ComponentRelation Constraint="Required" HasController="false"
+        Name="ChickenMovementComponent" Namespace="MyGem"
+        Include="Multiplayer/ChickenMovementComponent.h"/>
+</Component>

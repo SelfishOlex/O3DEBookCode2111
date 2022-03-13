@@ -8,8 +8,6 @@ set(FILES
     Source/UiScoreComponent.h
     Source/KickingComponent.cpp
     Source/KickingComponent.h
-    Source/ChickenAnimationComponent.cpp
-    Source/ChickenAnimationComponent.h
     Include/MyGem/ChickenBus.h
 
     Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
@@ -30,7 +28,6 @@ set(FILES
     Source/Multiplayer/GoalDetectorComponent.cpp
     Source/Multiplayer/GoalDetectorComponent.h
 
-    # new
     Include/MyGem/BallBus.h
     Include/MyGem/BallSpawnerBus.h
     Source/AutoGen/BallSpawnerComponent.AutoComponent.xml
@@ -39,4 +36,9 @@ set(FILES
     Source/AutoGen/BallComponent.AutoComponent.xml
     Source/Multiplayer/BallComponent.cpp
     Source/Multiplayer/BallComponent.h
+
+    # new
+    Source/AutoGen/ChickenAnimationComponent.AutoComponent.xml
+    Source/Multiplayer/ChickenAnimationComponent.cpp
+    Source/Multiplayer/ChickenAnimationComponent.h
 )

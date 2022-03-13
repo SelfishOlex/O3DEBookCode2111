@@ -54,146 +54,65 @@
         }
     },
     "Entities": {
-        "Entity_[676522459270]": {
-            "Id": "Entity_[676522459270]",
-            "Name": "Chicken Rigidbody",
+        "Entity_[685112393862]": {
+            "Id": "Entity_[685112393862]",
+            "Name": "Chicken",
             "Components": {
-                "Component_[11254527722826929517]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 11254527722826929517
+                "Component_[12285127429432180242]": {
+                    "$type": "EditorClothComponent",
+                    "Id": 12285127429432180242,
+                    "Configuration": {
+                        "Mesh Node": "chicken_mohawk_1",
+                        "Mass": 4.0,
+                        "Remove Static Triangles": false
+                    }
                 },
-                "Component_[11752612383131299817]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 11752612383131299817,
-                    "ComponentOrderEntryArray": [
-                        {
-                            "ComponentId": 12470135924384913029
-                        }
-                    ]
-                },
-                "Component_[12004522441155896281]": {
+                "Component_[12917798267488243668]": {
                     "$type": "EditorPendingCompositionComponent",
-                    "Id": 12004522441155896281
+                    "Id": 12917798267488243668
                 },
-                "Component_[12327847693349375221]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 12327847693349375221
-                },
-                "Component_[12470135924384913029]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 12470135924384913029,
-                    "Parent Entity": "Entity_[685112393862]"
-                },
-                "Component_[14919455666821657531]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 14919455666821657531,
-                    "Child Entity Order": [
-                        "Entity_[680817426566]"
-                    ]
-                },
-                "Component_[16643225638363527013]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 16643225638363527013
-                },
-                "Component_[17083722249682325420]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 17083722249682325420
-                },
-                "Component_[3193199229668798593]": {
+                "Component_[14287832103145009356]": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 3193199229668798593,
+                    "Id": 14287832103145009356,
                     "m_template": {
-                        "$type": "Multiplayer::NetworkTransformComponent"
+                        "$type": "MyGem::ChickenComponent"
                     }
                 },
-                "Component_[4249899715629282449]": {
+                "Component_[17318068742551588934]": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 4249899715629282449,
+                    "Id": 17318068742551588934,
                     "m_template": {
-                        "$type": "NetBindComponent"
+                        "$type": "MyGem::ChickenAnimationComponent"
                     }
                 },
-                "Component_[4274252334406790321]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 4274252334406790321
-                },
-                "Component_[786957291078135994]": {
-                    "$type": "SelectionComponent",
-                    "Id": 786957291078135994
-                }
-            }
-        },
-        "Entity_[680817426566]": {
-            "Id": "Entity_[680817426566]",
-            "Name": "Chicken_Actor",
-            "Components": {
-                "Component_[10153184769011204037]": {
-                    "$type": "SelectionComponent",
-                    "Id": 10153184769011204037
-                },
-                "Component_[10613604957653763066]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 10613604957653763066,
-                    "m_template": {
-                        "$type": "NetBindComponent"
-                    }
-                },
-                "Component_[12023821431291766911]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 12023821431291766911,
-                    "Controller": {
-                        "Configuration": {
-                            "materials": [
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 668669130
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
-                                        }
-                                    }
-                                },
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 1541321207
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{6114C408-26EE-51DC-8733-A07800BF4991}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_eye_mat.azmaterial"
-                                        }
-                                    }
-                                },
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 2608524672
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{80F92051-203E-52CE-B4D6-E3AED21795C9}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_mohawkmat.azmaterial"
-                                        }
-                                    }
-                                }
-                            ]
+                "Component_[3247761439312596750]": {
+                    "$type": "EditorActorComponent",
+                    "Id": 3247761439312596750,
+                    "ActorAsset": {
+                        "assetId": {
+                            "guid": "{3E4C6A29-92A4-523E-8739-F3E64957569E}",
+                            "subId": 166954688
+                        },
+                        "loadBehavior": "QueueLoad",
+                        "assetHint": "objects/cloth/chicken/actor/chicken.actor"
+                    },
+                    "MaterialPerLOD": [
+                        {
+                            "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
                         }
-                    }
+                    ],
+                    "MaterialPerActor": {
+                        "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
+                    },
+                    "AttachmentTarget": ""
                 },
-                "Component_[12307288056972997582]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 12307288056972997582
+                "Component_[3261249813163778338]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3261249813163778338
                 },
-                "Component_[14323267767717292571]": {
+                "Component_[3715064464317678908]": {
                     "$type": "EditorAnimGraphComponent",
-                    "Id": 14323267767717292571,
+                    "Id": 3715064464317678908,
                     "AnimGraphAsset": {
                         "assetId": {
                             "guid": "{134EC72C-693C-56D2-857B-F3D590FD6ACA}"
@@ -221,152 +140,6 @@
                             }
                         ]
                     }
-                },
-                "Component_[15298150969763781771]": {
-                    "$type": "EditorScriptCanvasComponent",
-                    "Id": 15298150969763781771,
-                    "m_name": "celebrate.scriptcanvas",
-                    "runtimeDataOverrides": {
-                        "source": {
-                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
-                            "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
-                        }
-                    },
-                    "sourceHandle": {
-                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
-                        "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
-                    }
-                },
-                "Component_[16388291370935886976]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 16388291370935886976
-                },
-                "Component_[17273633015317842366]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 17273633015317842366
-                },
-                "Component_[18385928157765337756]": {
-                    "$type": "EditorActorComponent",
-                    "Id": 18385928157765337756,
-                    "ActorAsset": {
-                        "assetId": {
-                            "guid": "{3E4C6A29-92A4-523E-8739-F3E64957569E}",
-                            "subId": 166954688
-                        },
-                        "loadBehavior": "QueueLoad",
-                        "assetHint": "objects/cloth/chicken/actor/chicken.actor"
-                    },
-                    "MaterialPerLOD": [
-                        {
-                            "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
-                        }
-                    ],
-                    "MaterialPerActor": {
-                        "AssetPath": "objects/cloth/chicken/actor/chicken.mtl"
-                    },
-                    "AttachmentTarget": ""
-                },
-                "Component_[3482722103355682975]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 3482722103355682975
-                },
-                "Component_[4826327274018205895]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 4826327274018205895
-                },
-                "Component_[5939417605550024797]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 5939417605550024797
-                },
-                "Component_[5972366552007342404]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 5972366552007342404,
-                    "m_template": {
-                        "$type": "Multiplayer::NetworkTransformComponent"
-                    }
-                },
-                "Component_[7236637452394054627]": {
-                    "$type": "EditorClothComponent",
-                    "Id": 7236637452394054627,
-                    "Configuration": {
-                        "Mesh Node": "chicken_mohawk_1",
-                        "Mass": 4.0,
-                        "Remove Static Triangles": false
-                    }
-                },
-                "Component_[868427789695884987]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 868427789695884987
-                },
-                "Component_[9845606399230319505]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 9845606399230319505,
-                    "Parent Entity": "Entity_[676522459270]",
-                    "Transform Data": {
-                        "Rotate": [
-                            0.0,
-                            0.0,
-                            -0.00006830000347690657
-                        ]
-                    }
-                },
-                "Component_[9979479216337101498]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 9979479216337101498,
-                    "ComponentOrderEntryArray": [
-                        {
-                            "ComponentId": 9845606399230319505
-                        },
-                        {
-                            "ComponentId": 18385928157765337756,
-                            "SortIndex": 1
-                        },
-                        {
-                            "ComponentId": 9927411050130082647,
-                            "SortIndex": 2
-                        },
-                        {
-                            "ComponentId": 7236637452394054627,
-                            "SortIndex": 3
-                        },
-                        {
-                            "ComponentId": 14323267767717292571,
-                            "SortIndex": 4
-                        },
-                        {
-                            "ComponentId": 15298150969763781771,
-                            "SortIndex": 5
-                        }
-                    ]
-                }
-            }
-        },
-        "Entity_[685112393862]": {
-            "Id": "Entity_[685112393862]",
-            "Name": "Chicken",
-            "Components": {
-                "Component_[12568865151165252742]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 12568865151165252742,
-                    "m_template": {
-                        "$type": "ChickenAnimationComponent",
-                        "Actor": "Entity_[680817426566]"
-                    }
-                },
-                "Component_[12917798267488243668]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 12917798267488243668
-                },
-                "Component_[14287832103145009356]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 14287832103145009356,
-                    "m_template": {
-                        "$type": "MyGem::ChickenComponent"
-                    }
-                },
-                "Component_[3261249813163778338]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 3261249813163778338
                 },
                 "Component_[3837204912784440039]": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -440,6 +213,21 @@
                         "$type": "Multiplayer::NetworkTransformComponent"
                     }
                 },
+                "Component_[741466710832432347]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 741466710832432347,
+                    "m_name": "celebrate.scriptcanvas",
+                    "runtimeDataOverrides": {
+                        "source": {
+                            "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                            "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
+                        }
+                    },
+                    "sourceHandle": {
+                        "id": "{731A37C4-77E0-56AB-BA9E-659352272EE2}",
+                        "path": "C:/git/book/MyProject/scriptcanvas/celebrate.scriptcanvas"
+                    }
+                },
                 "Component_[7650187872977307002]": {
                     "$type": "GenericComponentWrapper",
                     "Id": 7650187872977307002,
@@ -456,13 +244,61 @@
                     "Id": 7874177159288365422,
                     "Child Entity Order": [
                         "Entity_[689407361158]",
-                        "Entity_[676522459270]",
                         "Entity_[693702328454]"
                     ]
                 },
                 "Component_[8018146290632383969]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 8018146290632383969
+                },
+                "Component_[8212258095565726443]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 8212258095565726443,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 668669130
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1541321207
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{6114C408-26EE-51DC-8733-A07800BF4991}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_eye_mat.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2608524672
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{80F92051-203E-52CE-B4D6-E3AED21795C9}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_mohawkmat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
                 },
                 "Component_[8426637723647331754]": {
                     "$type": "GenericComponentWrapper",

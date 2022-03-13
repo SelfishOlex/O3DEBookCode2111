@@ -61,7 +61,7 @@ namespace MyGem
         UpdateVelocity(chickenInput);
 
         GetNetworkCharacterComponentController()->
-            TryMoveWithVelocity(m_velocity, deltaTime);
+            TryMoveWithVelocity(GetVelocity(), deltaTime);
     }
 
     void ChickenMovementComponentController::OnPressed(float value)
@@ -154,8 +154,8 @@ namespace MyGem
         {
             combined.Normalize();
         }
-        m_velocity = AZ::Quaternion::CreateRotationZ(currentHeading).
+        SetVelocity(AZ::Quaternion::CreateRotationZ(currentHeading).
             TransformVector(combined) * GetWalkSpeed() +
-            AZ::Vector3::CreateAxisZ(GetGravity());
+            AZ::Vector3::CreateAxisZ(GetGravity()));
     }
 } // namespace MyGem

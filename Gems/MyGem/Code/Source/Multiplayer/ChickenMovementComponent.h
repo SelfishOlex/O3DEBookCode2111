@@ -57,7 +57,5 @@ namespace MyGem
         float m_forward = 0;
         float m_strafe = 0;
         float m_yaw = 0;
-
-        AZ::Vector3 m_velocity = AZ::Vector3::CreateZero();
     };
 } // namespace MyGem
