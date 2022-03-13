@@ -131,6 +131,13 @@
                     "$type": "EditorVisibilityComponent",
                     "Id": 16500731390199254116
                 },
+                "Component_[17801004837307393398]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 17801004837307393398,
+                    "m_template": {
+                        "$type": "MyGem::BallComponent"
+                    }
+                },
                 "Component_[17962865334647861713]": {
                     "$type": "EditorEntitySortComponent",
                     "Id": 17962865334647861713

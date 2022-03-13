@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<Component
+    Name="BallSpawnerComponent"
+    Namespace="MyGem"
+    OverrideComponent="false"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/BallSpawnerComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <ComponentRelation Constraint="Weak" HasController="false"
+        Name="TransformComponent" Namespace="AzFramework"
+        Include="AzFramework/Components/TransformComponent.h"/>
+
+    <Include File="AzCore/Asset/AssetSerializer.h"/>
+    <Include File="AzFramework/Spawnable/Spawnable.h"/>
+    <ArchetypeProperty
+        Type="AZ::Data::Asset&lt;AzFramework::Spawnable&gt;"
+        Name="BallAsset" Init="" ExposeToEditor="true" />
+</Component>

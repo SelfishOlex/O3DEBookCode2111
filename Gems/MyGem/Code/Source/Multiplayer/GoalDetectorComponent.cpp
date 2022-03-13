@@ -1,9 +1,10 @@
-#include <AzCore/Component/TransformBus.h>
 #include <AzCore/Interface/Interface.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <AzFramework/Physics/PhysicsScene.h>
 #include <Multiplayer/GoalDetectorComponent.h>
+#include <MyGem/BallSpawnerBus.h>
 #include <MyGem/UiScoreBus.h>
+#include <Source/AutoGen/BallComponent.AutoComponent.h>
 
 namespace MyGem
 {
@@ -77,13 +78,35 @@ namespace MyGem
             if (te.m_triggerBody &&
                 te.m_triggerBody->GetEntityId() == me)
             {
+                if (!IsBall(te.m_otherBody->GetEntityId()))
+                {
+                    continue;
+                }
+
                 if (te.m_type == TriggerEvent::Type::Enter)
                 {
-                    // TODO respawn the ball
+                    BallSpawnerRequestBus::Broadcast(
+                      &BallSpawnerRequestBus::Events::RespawnBall);
                     ModifyScore()++;
                     break;
                 }
             }
         }
+    }
+
+    bool GoalDetectorComponentController::IsBall(
+        const AZ::EntityId& id) const
+    {
+        using namespace AZ;
+        auto ca = Interface<ComponentApplicationRequests>::Get();
+        if (Entity* entity = ca->FindEntity(id))
+        {
+            if (entity->FindComponent<BallComponent>())
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 } // namespace MyGem

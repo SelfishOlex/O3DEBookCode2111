@@ -542,60 +542,6 @@
                 }
             }
         },
-        "Entity_[582624783131]": {
-            "Id": "Entity_[582624783131]",
-            "Name": "Ball Respawn",
-            "Components": {
-                "Component_[11674756090134608621]": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 11674756090134608621
-                },
-                "Component_[13007430764577283706]": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 13007430764577283706
-                },
-                "Component_[13991416037222250516]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 13991416037222250516
-                },
-                "Component_[14036803145571571148]": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 14036803145571571148
-                },
-                "Component_[14294147178059294887]": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 14294147178059294887
-                },
-                "Component_[16766643799014742460]": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 16766643799014742460
-                },
-                "Component_[16777764006440733793]": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 16777764006440733793
-                },
-                "Component_[2874514907034291570]": {
-                    "$type": "EditorLockComponent",
-                    "Id": 2874514907034291570
-                },
-                "Component_[401417563744829980]": {
-                    "$type": "SelectionComponent",
-                    "Id": 401417563744829980
-                },
-                "Component_[9130818010542575829]": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 9130818010542575829,
-                    "Parent Entity": "Entity_[673144681107]",
-                    "Transform Data": {
-                        "Translate": [
-                            -1.5507574081420898,
-                            -1.3745620250701904,
-                            5.51551628112793
-                        ]
-                    }
-                }
-            }
-        },
         "Entity_[663637557382]": {
             "Id": "Entity_[663637557382]",
             "Name": "Chicken Spawn",
@@ -712,10 +658,9 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 9064384386395509372,
                     "Child Entity Order": [
+                        "Instance_[791571238360]/ContainerEntity",
                         "Instance_[706254474040]/ContainerEntity",
                         "Instance_[942477675320]/ContainerEntity",
-                        "Instance_[678661709874]/ContainerEntity",
-                        "Entity_[582624783131]",
                         "Entity_[949797666437]",
                         "Entity_[686029582995]",
                         "Entity_[866418209427]",
@@ -1587,31 +1532,6 @@
                 }
             ]
         },
-        "Instance_[678661709874]": {
-            "Source": "Prefabs/Network_Ball.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[17101117728891682609]/Parent Entity",
-                    "value": "../Entity_[673144681107]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[17101117728891682609]/Transform Data/Translate/0",
-                    "value": -1.5219192504882813
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[17101117728891682609]/Transform Data/Translate/1",
-                    "value": -1.3745620250701904
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[17101117728891682609]/Transform Data/Translate/2",
-                    "value": 5.51551628112793
-                }
-            ]
-        },
         "Instance_[706254474040]": {
             "Source": "Prefabs/Goal_1.prefab",
             "Patches": [
@@ -1634,6 +1554,31 @@
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[1381307764541149578]/Transform Data/Translate/2",
                     "value": 1.162177801132202
+                }
+            ]
+        },
+        "Instance_[791571238360]": {
+            "Source": "Prefabs/Ball_Spawner.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[15227766241005529357]/Parent Entity",
+                    "value": "../Entity_[673144681107]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[15227766241005529357]/Transform Data/Translate/0",
+                    "value": -1.5507574081420898
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[15227766241005529357]/Transform Data/Translate/1",
+                    "value": -1.3745620250701904
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[15227766241005529357]/Transform Data/Translate/2",
+                    "value": 5.51551628112793
                 }
             ]
         },

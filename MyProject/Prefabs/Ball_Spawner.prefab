@@ -1,0 +1,150 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Ball_Spawner",
+        "Components": {
+            "Component_[11329378316609239258]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 11329378316609239258,
+                "Child Entity Order": [
+                    "Entity_[800161172952]"
+                ]
+            },
+            "Component_[1223836821320282237]": {
+                "$type": "SelectionComponent",
+                "Id": 1223836821320282237
+            },
+            "Component_[12780738310905825907]": {
+                "$type": "EditorLockComponent",
+                "Id": 12780738310905825907
+            },
+            "Component_[1402434193899516085]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 1402434193899516085
+            },
+            "Component_[14037333538489470826]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 14037333538489470826
+            },
+            "Component_[15227766241005529357]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 15227766241005529357,
+                "Parent Entity": ""
+            },
+            "Component_[17488767591678833371]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 17488767591678833371
+            },
+            "Component_[2354305340344616795]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 2354305340344616795
+            },
+            "Component_[3688140635503629554]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 3688140635503629554
+            },
+            "Component_[4980917879203754590]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 4980917879203754590
+            },
+            "Component_[8088600184585225758]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 8088600184585225758
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[800161172952]": {
+            "Id": "Entity_[800161172952]",
+            "Name": "Ball Spawner",
+            "Components": {
+                "Component_[11674756090134608621]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 11674756090134608621
+                },
+                "Component_[13007430764577283706]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 13007430764577283706
+                },
+                "Component_[13991416037222250516]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 13991416037222250516,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 9130818010542575829
+                        },
+                        {
+                            "ComponentId": 16707245917547802752,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 9819640919576630118,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 9285668757849812334,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[14036803145571571148]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14036803145571571148
+                },
+                "Component_[14294147178059294887]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14294147178059294887
+                },
+                "Component_[16707245917547802752]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 16707245917547802752,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[16766643799014742460]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16766643799014742460
+                },
+                "Component_[16777764006440733793]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16777764006440733793
+                },
+                "Component_[2874514907034291570]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 2874514907034291570
+                },
+                "Component_[401417563744829980]": {
+                    "$type": "SelectionComponent",
+                    "Id": 401417563744829980
+                },
+                "Component_[9130818010542575829]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 9130818010542575829,
+                    "Parent Entity": "ContainerEntity"
+                },
+                "Component_[9285668757849812334]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9285668757849812334,
+                    "m_template": {
+                        "$type": "MyGem::BallSpawnerComponent",
+                        "BallAsset": {
+                            "assetId": {
+                                "guid": "{5E3E51B9-69FD-53BD-BDBE-21F3469305F4}",
+                                "subId": 281070872
+                            },
+                            "assetHint": "prefabs/network_ball.spawnable"
+                        }
+                    }
+                },
+                "Component_[9819640919576630118]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 9819640919576630118,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -39,5 +39,7 @@ namespace MyGem
             OnSceneTriggersEvent::Handler m_trigger;
         void OnTriggerEvents(
             const AzPhysics::TriggerEventList& tel);
+
+        bool IsBall(const AZ::EntityId& id) const;
     };
 } // namespace MyGem

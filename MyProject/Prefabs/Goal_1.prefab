@@ -95,7 +95,8 @@
                     "$type": "GenericComponentWrapper",
                     "Id": 12297498474473774662,
                     "m_template": {
-                        "$type": "MyGem::GoalDetectorComponent"
+                        "$type": "MyGem::GoalDetectorComponent",
+                        "Team": 0
                     }
                 },
                 "Component_[12803299377677266391]": {

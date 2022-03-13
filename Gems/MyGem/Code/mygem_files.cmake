@@ -26,8 +26,17 @@ set(FILES
     Source/Multiplayer/ChickenMovementComponent.h
     Source/Multiplayer/ChickenMovementComponent.cpp
 
-    # new
     Source/AutoGen/GoalDetectorComponent.AutoComponent.xml
     Source/Multiplayer/GoalDetectorComponent.cpp
     Source/Multiplayer/GoalDetectorComponent.h
+
+    # new
+    Include/MyGem/BallBus.h
+    Include/MyGem/BallSpawnerBus.h
+    Source/AutoGen/BallSpawnerComponent.AutoComponent.xml
+    Source/Multiplayer/BallSpawnerComponent.cpp
+    Source/Multiplayer/BallSpawnerComponent.h
+    Source/AutoGen/BallComponent.AutoComponent.xml
+    Source/Multiplayer/BallComponent.cpp
+    Source/Multiplayer/BallComponent.h
 )

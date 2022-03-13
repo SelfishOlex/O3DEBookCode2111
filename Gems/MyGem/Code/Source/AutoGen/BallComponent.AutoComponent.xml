@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<Component
+    Name="BallComponent"
+    Namespace="MyGem"
+    OverrideComponent="false"
+    OverrideController="true"
+    OverrideInclude="Multiplayer/BallComponent.h"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+</Component>
