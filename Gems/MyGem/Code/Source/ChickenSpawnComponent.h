@@ -21,7 +21,7 @@ namespace MyGem
         void Deactivate() override;
 
         // ChickenNotificationBus
-        void OnChickenCreated(AZ::Entity* e) override;
+        void OnChickenCreated(AZ::Entity* e, int team) override;
 
         // IMultiplayerSpawner overrides
         Multiplayer::NetworkEntityHandle OnPlayerJoin(
@@ -33,6 +33,7 @@ namespace MyGem
             AzNetworking::DisconnectReason) override {}
 
     private:
-        AZ::Entity* m_chicken = nullptr;
+        AZStd::vector<AZ::Entity*> m_teams[2] = {};
+        AZ::Entity* GetNextChicken();
     };
 } // namespace MyGem

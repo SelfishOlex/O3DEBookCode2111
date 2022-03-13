@@ -24,6 +24,7 @@
                     "Entity_[673144681107]",
                     "Entity_[560175189794]",
                     "Entity_[673950240415]",
+                    "Entity_[799910683884]",
                     "Entity_[663637557382]"
                 ]
             },
@@ -574,7 +575,14 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 5711435128487627617,
                     "Child Entity Order": [
-                        "Instance_[667932524678]/ContainerEntity"
+                        "Instance_[993184212204]/ContainerEntity",
+                        "Instance_[6074130523372]/ContainerEntity",
+                        "Instance_[6482152416492]/ContainerEntity",
+                        "Instance_[6486447383788]/ContainerEntity",
+                        "Instance_[7212296856812]/ContainerEntity",
+                        "Instance_[7723397965036]/ContainerEntity",
+                        "Instance_[7727692932332]/ContainerEntity",
+                        "Instance_[2358983812332]/ContainerEntity"
                     ]
                 },
                 "Component_[6906986635318535345]": {
@@ -893,6 +901,98 @@
                         "LocallyEnabled": false
                     },
                     "HasNonUniformScale": true
+                }
+            }
+        },
+        "Entity_[799910683884]": {
+            "Id": "Entity_[799910683884]",
+            "Name": "Camera",
+            "Components": {
+                "Component_[11895140916889160460]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 11895140916889160460
+                },
+                "Component_[16880285896855930892]": {
+                    "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                    "Id": 16880285896855930892,
+                    "Controller": {
+                        "Configuration": {
+                            "Field of View": 55.0,
+                            "EditorEntityId": 6580352835762371235
+                        }
+                    }
+                },
+                "Component_[16898091459302872451]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 16898091459302872451,
+                    "m_template": {
+                        "$type": "NetBindComponent"
+                    }
+                },
+                "Component_[17187464423780271193]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 17187464423780271193
+                },
+                "Component_[17495696818315413311]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17495696818315413311
+                },
+                "Component_[18086214374043522055]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 18086214374043522055,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            20.570127487182617,
+                            -14.299200057983398,
+                            4.337868690490723
+                        ],
+                        "Rotate": [
+                            -10.649493217468262,
+                            -7.708676815032959,
+                            35.24333190917969
+                        ]
+                    }
+                },
+                "Component_[18387556550380114975]": {
+                    "$type": "SelectionComponent",
+                    "Id": 18387556550380114975
+                },
+                "Component_[18420763316865738114]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 18420763316865738114,
+                    "m_template": {
+                        "$type": "Multiplayer::NetworkTransformComponent"
+                    }
+                },
+                "Component_[2654521436129313160]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2654521436129313160
+                },
+                "Component_[5265045084611556958]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5265045084611556958
+                },
+                "Component_[7169798125182238623]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7169798125182238623
+                },
+                "Component_[8866210352157164042]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 8866210352157164042,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 18086214374043522055
+                        },
+                        {
+                            "ComponentId": 16880285896855930892,
+                            "SortIndex": 1
+                        }
+                    ]
+                },
+                "Component_[9129253381063760879]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 9129253381063760879
                 }
             }
         },
@@ -1467,6 +1567,36 @@
                 }
             ]
         },
+        "Instance_[2358983812332]": {
+            "Source": "Prefabs/Chicken_Team_1.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/0",
+                    "value": 21.270092010498047
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/1",
+                    "value": -1.6273919343948364
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/2",
+                    "value": -3.165898561477661
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Rotate/2",
+                    "value": 66.72135162353516
+                }
+            ]
+        },
         "Instance_[2434081272467]": {
             "Source": "Prefabs/Goal_End.prefab",
             "Patches": [
@@ -1502,32 +1632,92 @@
                 }
             ]
         },
-        "Instance_[667932524678]": {
-            "Source": "Prefabs/Chicken.prefab",
+        "Instance_[6074130523372]": {
+            "Source": "Prefabs/Chicken_Team_0.prefab",
             "Patches": [
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Parent Entity",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Parent Entity",
                     "value": "../Entity_[663637557382]"
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Transform Data/Translate/0",
-                    "value": -3.800992727279663
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/0",
+                    "value": -9.42466640472412
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Transform Data/Translate/1",
-                    "value": -2.76395034790039
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/1",
+                    "value": -4.34158992767334
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Transform Data/Translate/2",
-                    "value": -3.5166125297546387
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/2",
+                    "value": -3.2733945846557617
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[5274107993997079659]/Transform Data/Rotate/2",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Rotate/2",
+                    "value": -57.496482849121094
+                }
+            ]
+        },
+        "Instance_[6482152416492]": {
+            "Source": "Prefabs/Chicken_Team_0.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/0",
+                    "value": -9.3995943069458
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/1",
+                    "value": 6.580855369567871
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/2",
+                    "value": -3.2733945846557617
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Rotate/2",
+                    "value": -57.496482849121094
+                }
+            ]
+        },
+        "Instance_[6486447383788]": {
+            "Source": "Prefabs/Chicken_Team_0.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/0",
+                    "value": -9.347230911254885
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/1",
+                    "value": 8.98291301727295
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/2",
+                    "value": -3.2733945846557617
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Rotate/2",
                     "value": -57.496482849121094
                 }
             ]
@@ -1554,6 +1744,96 @@
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[1381307764541149578]/Transform Data/Translate/2",
                     "value": 1.162177801132202
+                }
+            ]
+        },
+        "Instance_[7212296856812]": {
+            "Source": "Prefabs/Chicken_Team_1.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/0",
+                    "value": 21.18631935119629
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/1",
+                    "value": -4.636137008666992
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/2",
+                    "value": -3.165898561477661
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Rotate/2",
+                    "value": 66.72135162353516
+                }
+            ]
+        },
+        "Instance_[7723397965036]": {
+            "Source": "Prefabs/Chicken_Team_1.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/0",
+                    "value": 21.34956932067871
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/1",
+                    "value": 9.157934188842772
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/2",
+                    "value": -3.165898561477661
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Rotate/2",
+                    "value": 66.72135162353516
+                }
+            ]
+        },
+        "Instance_[7727692932332]": {
+            "Source": "Prefabs/Chicken_Team_1.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/0",
+                    "value": 21.265796661376953
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/1",
+                    "value": 6.149188995361328
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Translate/2",
+                    "value": -3.165898561477661
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[10573978534363651840]/Transform Data/Rotate/2",
+                    "value": 66.72135162353516
                 }
             ]
         },
@@ -1604,6 +1884,36 @@
                     "op": "replace",
                     "path": "/ContainerEntity/Components/Component_[6988138382250649114]/Transform Data/Translate/2",
                     "value": 1.162177801132202
+                }
+            ]
+        },
+        "Instance_[993184212204]": {
+            "Source": "Prefabs/Chicken_Team_0.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Parent Entity",
+                    "value": "../Entity_[663637557382]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/0",
+                    "value": -9.372303009033203
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/1",
+                    "value": -1.9395322799682615
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Translate/2",
+                    "value": -3.2733945846557617
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/Component_[16017109465155122915]/Transform Data/Rotate/2",
+                    "value": -57.496482849121094
                 }
             ]
         }

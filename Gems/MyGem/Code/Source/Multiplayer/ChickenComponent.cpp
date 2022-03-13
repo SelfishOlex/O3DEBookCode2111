@@ -14,6 +14,6 @@ namespace MyGem
 
         ChickenNotificationBus::Broadcast(
             &ChickenNotificationBus::Events::OnChickenCreated,
-                GetEntity());
+                GetEntity(), GetTeam());
     }
 }

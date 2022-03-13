@@ -41,15 +41,32 @@ namespace MyGem
         AZ::Interface<IMultiplayerSpawner>::Unregister(this);
     }
 
-    void ChickenSpawnComponent::OnChickenCreated(AZ::Entity* e)
+    void ChickenSpawnComponent::OnChickenCreated(
+        AZ::Entity* e, int team)
     {
-        m_chicken = e;
+        if (team >= 0 && team <= 1)
+        {
+            m_teams[team].push_back(e);
+        }
     }
 
     NetworkEntityHandle ChickenSpawnComponent::OnPlayerJoin(
         [[maybe_unused]] uint64_t userId,
         const Multiplayer::MultiplayerAgentDatum&)
     {
-        return { m_chicken };
+        return { GetNextChicken() };
+    }
+
+    AZ::Entity* ChickenSpawnComponent::GetNextChicken()
+    {
+        AZStd::vector<AZ::Entity*>& team =
+            m_teams[0].size() > m_teams[1].size() ?
+            m_teams[0] : m_teams[1];
+        if (team.empty()) return nullptr;
+
+        AZ::Entity* newChicken = team.back();
+        team.pop_back();
+
+        return newChicken;
     }
 } // namespace MyGem

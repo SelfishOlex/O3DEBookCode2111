@@ -6,4 +6,7 @@
     OverrideController="true"
     OverrideInclude="Multiplayer/ChickenComponent.h"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<ArchetypeProperty Type="int" Name="Team"
+	                   Init="0" ExposeToEditor="true" />
 </Component>
