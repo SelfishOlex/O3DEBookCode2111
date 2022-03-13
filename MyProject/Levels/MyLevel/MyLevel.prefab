@@ -158,46 +158,6 @@
                     "$type": "EditorInspectorComponent",
                     "Id": 16919232076966545697
                 },
-                "Component_[5182430712893438093]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 5182430712893438093,
-                    "Controller": {
-                        "Configuration": {
-                            "materials": {
-                                "{}": {
-                                    "MaterialAsset": {
-                                        "assetId": {
-                                            "guid": "{099BB2A1-F76E-5B77-BCFD-B0A6249F0EA3}"
-                                        },
-                                        "assetHint": "materials/presets/macbeth/16_yellow.azmaterial"
-                                    },
-                                    "PropertyOverrides": {
-                                        "clearCoat.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        },
-                                        "emissive.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        },
-                                        "roughness.factor": {
-                                            "$type": "float",
-                                            "Value": 0.07999999821186066
-                                        },
-                                        "specularF0.factor": {
-                                            "$type": "float",
-                                            "Value": 0.44999998807907104
-                                        },
-                                        "metallic.factor": {
-                                            "$type": "float",
-                                            "Value": 0.6000000238418579
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
                 "Component_[5675108321710651991]": {
                     "$type": "AZ::Render::EditorMeshComponent",
                     "Id": 5675108321710651991,
@@ -216,6 +176,24 @@
                 "Component_[5681893399601237518]": {
                     "$type": "EditorEntitySortComponent",
                     "Id": 5681893399601237518
+                },
+                "Component_[583539328370439388]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 583539328370439388,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{528748BD-AD97-59F2-81E7-E36D7BF69A16}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/01_dark_skin_tex.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "Component_[592692962543397545]": {
                     "$type": "EditorPendingCompositionComponent",
@@ -286,6 +264,24 @@
                         ]
                     }
                 },
+                "Component_[13944637618047424103]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 13944637618047424103,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{95D68A9E-EC6C-5371-872D-DEB7E91F8D63}"
+                                        },
+                                        "assetHint": "materials/presets/pbr/default_grid.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[16500731390199254116]": {
                     "$type": "EditorVisibilityComponent",
                     "Id": 16500731390199254116
@@ -297,67 +293,6 @@
                 "Component_[18259454083278348461]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 18259454083278348461
-                },
-                "Component_[2421369155400741601]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 2421369155400741601,
-                    "Controller": {
-                        "Configuration": {
-                            "materials": {
-                                "{}": {
-                                    "MaterialAsset": {
-                                        "assetId": {
-                                            "guid": "{95D68A9E-EC6C-5371-872D-DEB7E91F8D63}"
-                                        },
-                                        "assetHint": "materials/presets/pbr/default_grid.azmaterial"
-                                    },
-                                    "PropertyOverrides": {
-                                        "roughness.upperBound": {
-                                            "$type": "float",
-                                            "Value": 0.8999999761581421
-                                        },
-                                        "irradiance.factor": {
-                                            "$type": "float",
-                                            "Value": 0.9800000190734863
-                                        },
-                                        "baseColor.color": {
-                                            "$type": "Color",
-                                            "Value": [
-                                                1.0,
-                                                0.8483558297157288,
-                                                0.02236972562968731,
-                                                1.0
-                                            ]
-                                        },
-                                        "clearCoat.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        },
-                                        "specularF0.factor": {
-                                            "$type": "float",
-                                            "Value": 0.46000000834465027
-                                        },
-                                        "roughness.factor": {
-                                            "$type": "float",
-                                            "Value": 0.38999998569488525
-                                        },
-                                        "metallic.factor": {
-                                            "$type": "float",
-                                            "Value": 0.0
-                                        },
-                                        "emissive.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        },
-                                        "emissive.intensity": {
-                                            "$type": "float",
-                                            "Value": 0.3799999952316284
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 },
                 "Component_[2878965951621931041]": {
                     "$type": "EditorRigidBodyComponent",
@@ -1354,13 +1289,9 @@
                         }
                     }
                 },
-                "Component_[2498481642431902497]": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 2498481642431902497
-                },
-                "Component_[3010069499387345308]": {
+                "Component_[1907749599182629264]": {
                     "$type": "EditorMaterialComponent",
-                    "Id": 3010069499387345308,
+                    "Id": 1907749599182629264,
                     "Controller": {
                         "Configuration": {
                             "materials": {
@@ -1370,21 +1301,15 @@
                                             "guid": "{F4DF12BC-C818-550C-AA95-F4BE4A457772}"
                                         },
                                         "assetHint": "materials/presets/macbeth/14_green_tex.azmaterial"
-                                    },
-                                    "PropertyOverrides": {
-                                        "metallic.factor": {
-                                            "$type": "float",
-                                            "Value": 1.0
-                                        },
-                                        "roughness.factor": {
-                                            "$type": "float",
-                                            "Value": 1.0
-                                        }
                                     }
                                 }
                             }
                         }
                     }
+                },
+                "Component_[2498481642431902497]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 2498481642431902497
                 },
                 "Component_[4249577096000794634]": {
                     "$type": "EditorOnlyEntityComponent",
@@ -1676,6 +1601,24 @@
                         }
                     }
                 },
+                "Component_[3557506025206081748]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 3557506025206081748,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{A07AB932-AA2C-5097-A476-2C80B74CBE44}"
+                                        },
+                                        "assetHint": "materials/presets/macbeth/13_blue_tex.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[4603741990546259659]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 4603741990546259659,
@@ -1692,67 +1635,6 @@
                             89.99994659423828
                         ],
                         "UniformScale": 5.0
-                    }
-                },
-                "Component_[4796276784188783605]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 4796276784188783605,
-                    "Controller": {
-                        "Configuration": {
-                            "materials": {
-                                "{}": {
-                                    "MaterialAsset": {
-                                        "assetId": {
-                                            "guid": "{B8972ADB-DBA9-5807-9742-2B14453FDD96}"
-                                        },
-                                        "assetHint": "materials/presets/macbeth/13_blue.azmaterial"
-                                    },
-                                    "PropertyOverrides": {
-                                        "irradiance.factor": {
-                                            "$type": "float",
-                                            "Value": 1.0
-                                        },
-                                        "roughness.factor": {
-                                            "$type": "float",
-                                            "Value": 1.0
-                                        },
-                                        "clearCoat.factor": {
-                                            "$type": "float",
-                                            "Value": 0.8500000238418579
-                                        },
-                                        "specularF0.factor": {
-                                            "$type": "float",
-                                            "Value": 0.25999999046325684
-                                        },
-                                        "baseColor.factor": {
-                                            "$type": "float",
-                                            "Value": 1.0
-                                        },
-                                        "metallic.factor": {
-                                            "$type": "float",
-                                            "Value": 0.0
-                                        },
-                                        "irradiance.color": {
-                                            "$type": "Color",
-                                            "Value": [
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        },
-                                        "emissive.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        },
-                                        "clearCoat.enable": {
-                                            "$type": "bool",
-                                            "Value": false
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 },
                 "Component_[6289442637984243902]": {

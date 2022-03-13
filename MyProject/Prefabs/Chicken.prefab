@@ -138,6 +138,55 @@
                         "$type": "NetBindComponent"
                     }
                 },
+                "Component_[12023821431291766911]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 12023821431291766911,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 668669130
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1541321207
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{6114C408-26EE-51DC-8733-A07800BF4991}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_eye_mat.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2608524672
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{80F92051-203E-52CE-B4D6-E3AED21795C9}"
+                                            },
+                                            "assetHint": "objects/cloth/chicken/actor/chicken_mohawkmat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
                 "Component_[12307288056972997582]": {
                     "$type": "EditorLockComponent",
                     "Id": 12307288056972997582
@@ -259,66 +308,6 @@
                             0.0,
                             -0.00006830000347690657
                         ]
-                    }
-                },
-                "Component_[9927411050130082647]": {
-                    "$type": "EditorMaterialComponent",
-                    "Id": 9927411050130082647,
-                    "Controller": {
-                        "Configuration": {
-                            "materials": [
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 668669130
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{FB34D8F7-E8CA-542D-92A3-F0E04F3A3EC3}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_body_mat.azmaterial"
-                                        },
-                                        "PropertyOverrides": {
-                                            "baseColor.color": {
-                                                "$type": "Color",
-                                                "Value": [
-                                                    0.5000076293945313,
-                                                    0.5000076293945313,
-                                                    0.5000076293945313,
-                                                    1.0
-                                                ]
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 1541321207
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{6114C408-26EE-51DC-8733-A07800BF4991}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_chicken_eye_mat.azmaterial"
-                                        }
-                                    }
-                                },
-                                {
-                                    "Key": {
-                                        "materialSlotStableId": 2608524672
-                                    },
-                                    "Value": {
-                                        "MaterialAsset": {
-                                            "assetId": {
-                                                "guid": "{80F92051-203E-52CE-B4D6-E3AED21795C9}"
-                                            },
-                                            "assetHint": "objects/cloth/chicken/actor/chicken_mohawkmat.azmaterial"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
                     }
                 },
                 "Component_[9979479216337101498]": {

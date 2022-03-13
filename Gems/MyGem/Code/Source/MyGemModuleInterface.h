@@ -1,6 +1,5 @@
 #pragma once
 #include <ChickenAnimationComponent.h>
-#include <ChickenControllerComponent.h>
 #include <ChickenSpawnComponent.h>
 #include <GoalDetectorComponent.h>
 #include <KickingComponent.h>
@@ -25,7 +24,6 @@ namespace MyGem
         {
             m_descriptors.insert(m_descriptors.end(), {
                 MyGemSystemComponent::CreateDescriptor(),
-                ChickenControllerComponent::CreateDescriptor(),
                 GoalDetectorComponent::CreateDescriptor(),
                 UiScoreComponent::CreateDescriptor(),
                 KickingComponent::CreateDescriptor(),
