@@ -37,8 +37,12 @@ set(FILES
     Source/Multiplayer/BallComponent.cpp
     Source/Multiplayer/BallComponent.h
 
-    # new
     Source/AutoGen/ChickenAnimationComponent.AutoComponent.xml
     Source/Multiplayer/ChickenAnimationComponent.cpp
     Source/Multiplayer/ChickenAnimationComponent.h
+
+    # new
+    Source/AutoGen/ChickenCameraComponent.AutoComponent.xml
+    Source/Multiplayer/ChickenCameraComponent.cpp
+    Source/Multiplayer/ChickenCameraComponent.h
 )

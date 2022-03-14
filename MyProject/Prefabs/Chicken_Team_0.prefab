@@ -58,6 +58,18 @@
             "Id": "Entity_[1001774146796]",
             "Name": "Chicken",
             "Components": {
+                "Component_[10874969986985772889]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 10874969986985772889,
+                    "m_template": {
+                        "$type": "MyGem::ChickenCameraComponent",
+                        "CameraOffset": [
+                            0.0,
+                            -3.0,
+                            1.5
+                        ]
+                    }
+                },
                 "Component_[12285127429432180242]": {
                     "$type": "EditorClothComponent",
                     "Id": 12285127429432180242,
