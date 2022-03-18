@@ -1,4 +1,6 @@
 #include "MyInterfaceComponent.h"
+
+#include <AzCore/Interface/Interface.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <MyProject/MyInterface.h>
 
