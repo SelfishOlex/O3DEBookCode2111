@@ -111,7 +111,6 @@ if(PAL_TRAIT_BUILD_TESTS_SUPPORTED)
             NAME MyGem.Tests ${PAL_TRAIT_TEST_TARGET_TYPE}
             NAMESPACE Gem
             FILES_CMAKE
-                mygem_files.cmake
                 mygem_tests_files.cmake
             INCLUDE_DIRECTORIES
                 PRIVATE
