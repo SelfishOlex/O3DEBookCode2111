@@ -13,7 +13,6 @@ namespace MyGem
         if (auto sc = azrtti_cast<AZ::SerializeContext*>(rc))
         {
             sc->Class<KickingComponent, AZ::Component>()
-              ->Field("Ball", &KickingComponent::m_ball)
               ->Field("Kick force", &KickingComponent::m_kickForce)
               ->Version(1);
 
@@ -27,8 +26,6 @@ namespace MyGem
                     ->Attribute(
                         Attributes::AppearsInAddComponentMenu,
                             AZ_CRC_CE("Game"))
-                    ->DataElement(0, &KickingComponent::m_ball,
-                        "Ball", "Ball entity")
                     ->DataElement(0, &KickingComponent::m_kickForce,
                         "Kick force", "impulse strength")
                 ;
@@ -66,42 +63,42 @@ namespace MyGem
             if (te.m_triggerBody &&
                 te.m_triggerBody->GetEntityId() == GetEntityId())
             {
-                if (te.m_otherBody->GetEntityId() == m_ball &&
-                    te.m_type == TriggerEvent::Type::Enter)
+                if (te.m_type == TriggerEvent::Type::Enter)
                 {
-                    KickBall();
+                    KickBall(te.m_otherBody->GetEntityId());
                 }
             }
         }
     }
 
-    void KickingComponent::KickBall()
+    void KickingComponent::KickBall(AZ::EntityId b)
     {
-        AZ::Vector3 impulse = GetBallPosition() - GetSelfPosition();
+        AZ::Vector3 impulse = GetBallPosition(b) - GetSelfPosition();
 
         impulse.Normalize();
         impulse *= m_kickForce;
 
-        AddImpulseToBall(impulse);
+        AddImpulseToBall(impulse, b);
     }
 
-    AZ::Vector3 KickingComponent::GetBallPosition() const
+    AZ::Vector3 KickingComponent::GetBallPosition(AZ::EntityId ball)
     {
         AZ::Vector3 ballPosition = AZ::Vector3::CreateZero();
-        AZ::TransformBus::EventResult(ballPosition, m_ball,
+        AZ::TransformBus::EventResult(ballPosition, ball,
             &AZ::TransformBus::Events::GetWorldTranslation);
         return ballPosition;
     }
 
-    AZ::Vector3 KickingComponent::GetSelfPosition() const
+    AZ::Vector3 KickingComponent::GetSelfPosition()
     {
         return GetEntity()->GetTransform()->
             GetWorldTM().GetTranslation();
     }
 
-    void KickingComponent::AddImpulseToBall(const AZ::Vector3& v)
+    void KickingComponent::AddImpulseToBall(
+        AZ::Vector3 v, AZ::EntityId ball)
     {
-        Physics::RigidBodyRequestBus::Event(m_ball,
+        Physics::RigidBodyRequestBus::Event(ball,
           &Physics::RigidBodyRequestBus::Events::ApplyLinearImpulse,
             v);
     }
