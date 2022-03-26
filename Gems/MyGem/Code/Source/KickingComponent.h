@@ -25,13 +25,12 @@ namespace MyGem
         void OnTriggerEvents(
             const AzPhysics::TriggerEventList& tel);
 
-        AZ::EntityId m_ball;
         float m_kickForce = 1000.f;
 
-        void KickBall();
+        void KickBall(AZ::EntityId ball);
 
-        AZ::Vector3 GetBallPosition() const;
-        AZ::Vector3 GetSelfPosition() const;
-        void AddImpulseToBall(const AZ::Vector3& v);
+        AZ::Vector3 GetBallPosition(AZ::EntityId ball);
+        AZ::Vector3 GetSelfPosition();
+        void AddImpulseToBall(AZ::Vector3 v, AZ::EntityId ball);
     };
 } // namespace MyGem

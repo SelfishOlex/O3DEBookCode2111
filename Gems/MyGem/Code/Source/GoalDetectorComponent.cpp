@@ -69,8 +69,7 @@ namespace MyGem
             if (te.m_triggerBody &&
                 te.m_triggerBody->GetEntityId() == GetEntityId())
             {
-                if (te.m_otherBody->GetEntityId() == m_ball &&
-                    te.m_type == TriggerEvent::Type::Enter)
+                if (te.m_type == TriggerEvent::Type::Enter)
                 {
                     AZ::Vector3 respawnLocation = GetRespawnPoint();
                     RespawnBall(respawnLocation);
