@@ -19,7 +19,7 @@ void MyLevelComponent::Reflect(AZ::ReflectContext* rc)
     using namespace AZ::Edit::Attributes;
     // reflection of this component for O3DE Editor
     ec->Class<MyLevelComponent>("My Level Component",
-        "[Communicates using FindComponent]")
+        "[Communicates using AZ::Interface]")
       ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
         ->Attribute(AppearsInAddComponentMenu, AZ_CRC_CE("Level"))
         ->Attribute(Category, "My Project");
