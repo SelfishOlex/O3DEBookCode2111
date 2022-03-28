@@ -235,6 +235,12 @@
             "Id": "Entity_[1163754259827]",
             "Name": "Camera",
             "Components": {
+                "Component_[10452718635572279956]": {
+                    "$type": "EditorAudioListenerComponent",
+                    "Id": 10452718635572279956,
+                    "Rotation Entity": "Entity_[437731091004]",
+                    "Position Entity": "Entity_[437731091004]"
+                },
                 "Component_[11895140916889160460]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 11895140916889160460
