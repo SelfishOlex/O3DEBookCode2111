@@ -3,5 +3,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	2832853709	Play_Cheer			\Default Work Unit\Play_Cheer	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	975490081	Cheer	C:\git\book\MyProject\Sounds\wwise_project\.cache\Windows\SFX\mixkit-girls-audience-applause-510_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cheer		1156180
+	690860348	Cheer	C:\git\book\MyProject\Sounds\wwise_project\.cache\Windows\SFX\applause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cheer		1156180
 
