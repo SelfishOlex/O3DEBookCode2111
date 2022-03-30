@@ -16,16 +16,16 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2567744335">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2724865172">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2832853709" Name="Play_Cheer" ObjectPath="\Events\Default Work Unit\Play_Cheer">
 					<IncludedMemoryFiles>
-						<File Id="975490081" Language="SFX">
-							<ShortName>mixkit-girls-audience-applause-510.wav</ShortName>
-							<Path>SFX\mixkit-girls-audience-applause-510_10C4C929.wem</Path>
+						<File Id="690860348" Language="SFX">
+							<ShortName>applause.wav</ShortName>
+							<Path>SFX\applause_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

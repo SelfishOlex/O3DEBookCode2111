@@ -20,17 +20,17 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="mixkit-girls-audience-applause-510" ID="{F6DE3539-085E-494C-B496-565FB2EC920F}">
+						<AudioFileSource Name="applause" ID="{7EBF40B6-4BD8-46B2-BA52-F403C81D6EB3}">
 							<Language>SFX</Language>
-							<AudioFile>mixkit-girls-audience-applause-510.wav</AudioFile>
+							<AudioFile>applause.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="975490081"/>
+								<MediaID ID="690860348"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="mixkit-girls-audience-applause-510" ID="{F6DE3539-085E-494C-B496-565FB2EC920F}" Platform="Linked"/>
+						<ActiveSource Name="applause" ID="{7EBF40B6-4BD8-46B2-BA52-F403C81D6EB3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

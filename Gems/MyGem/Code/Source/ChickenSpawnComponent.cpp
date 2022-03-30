@@ -50,6 +50,6 @@ namespace MyGem
         [[maybe_unused]] uint64_t userId,
         const Multiplayer::MultiplayerAgentDatum&)
     {
-        return { m_chicken };
+        return NetworkEntityHandle{ m_chicken };
     }
 } // namespace MyGem
