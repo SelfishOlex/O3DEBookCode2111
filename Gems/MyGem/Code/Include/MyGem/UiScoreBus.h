@@ -20,8 +20,8 @@ namespace MyGem
     {
     public:
         AZ_EBUS_BEHAVIOR_BINDER(ScoreNotificationHandler,
-            "", AZ::SystemAllocator,
-            OnTeamScored);
+            "{33B5BC25-622B-4DF0-92CF-987CC6108C31}", 
+            AZ::SystemAllocator, OnTeamScored);
 
         void OnTeamScored(int team) override
         {
