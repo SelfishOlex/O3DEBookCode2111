@@ -145,12 +145,12 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
-                        "Mass": 200.0,
+                        "Mass": 400.0,
                         "Inertia tensor": {
                             "roll": 0.0,
                             "pitch": 0.0,
                             "yaw": 0.0,
-                            "scale": 0.05000000074505806
+                            "scale": 0.02500000037252903
                         }
                     }
                 },
