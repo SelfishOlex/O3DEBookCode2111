@@ -78,11 +78,6 @@ namespace MyGem
             if (te.m_triggerBody &&
                 te.m_triggerBody->GetEntityId() == me)
             {
-                if (!IsBall(te.m_otherBody->GetEntityId()))
-                {
-                    continue;
-                }
-
                 if (te.m_type == TriggerEvent::Type::Enter)
                 {
                     BallSpawnerRequestBus::Broadcast(
@@ -92,21 +87,5 @@ namespace MyGem
                 }
             }
         }
-    }
-
-    bool GoalDetectorComponentController::IsBall(
-        const AZ::EntityId& id) const
-    {
-        using namespace AZ;
-        auto ca = Interface<ComponentApplicationRequests>::Get();
-        if (Entity* entity = ca->FindEntity(id))
-        {
-            if (entity->FindComponent<BallComponent>())
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 } // namespace MyGem
