@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\wwise_project.wproj" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Triggers\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Switches\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\States\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\SoundBanks\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Queries\Factory Queries.wwu" DateLow="1646773949" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Queries\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Presets\Factory Spatial Audio.wwu" DateLow="1646773949" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Presets\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Modulators\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Mixing Sessions\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Metadata\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Game Parameters\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Events\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Effects\Factory Effects.wwu" DateLow="1646773949" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Effects\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1646773949" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Conversion Settings\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Audio Devices\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Attenuations\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
-	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1646784973" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\wwise_project.wproj" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\wwise_project.mrole.wsettings" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Triggers\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Switches\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\States\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\SoundBanks\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Queries\Factory Queries.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Queries\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Presets\Factory Spatial Audio.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Presets\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Modulators\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Mixing Sessions\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Metadata\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Game Parameters\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Events\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Effects\Factory Effects.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Effects\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Conversion Settings\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Audio Devices\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Attenuations\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
+	<ValidationCacheItem File="C:\git\book\MyProject\Sounds\wwise_project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1648335485" DateHigh="0"/>
 </ValidationCache>
