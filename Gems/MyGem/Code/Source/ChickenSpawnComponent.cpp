@@ -67,6 +67,6 @@ namespace MyGem
         AZ::Entity* newChicken = team.back();
         team.pop_back();
 
-        return NetworkEntityHandle{ newChicken };
+        return newChicken;
     }
 } // namespace MyGem
