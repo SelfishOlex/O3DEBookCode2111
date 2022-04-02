@@ -54,7 +54,7 @@ namespace MyGem
         [[maybe_unused]] uint64_t userId,
         const Multiplayer::MultiplayerAgentDatum&)
     {
-        return { GetNextChicken() };
+        return NetworkEntityHandle{ GetNextChicken() };
     }
 
     AZ::Entity* ChickenSpawnComponent::GetNextChicken()
