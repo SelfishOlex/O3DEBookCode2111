@@ -17,4 +17,4 @@ Each branch corresponds with a particular chapter in the book. For example branc
 
 # License
 
-The project files and source code are provided as is. Project files and source code is free to use as part of the published work.
+The project files and source code are provided as is. Project files and source code are free to use as part of the published work.
